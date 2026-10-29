@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10172a">
+<meta name="description" content="Naija Smart Hub offers free quizzes, brain games, calculators and learning resources for everyone.">
+<title>Naija Smart Hub | Learn, Play & Grow</title>
+
+<style>
+:root {
+  --bg:#0b1020;
+  --card:#151e33;
+  --text:#f8fafc;
+  --muted:#aab6ce;
+  --green:#20d6a0;
+  --blue:#5797ff;
+  --purple:#a879ff;
+  --orange:#ffad60;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+header {
+  padding:17px 5%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  background:#10172a;
+  border-bottom:1px solid #27334d;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.logo { font-size:20px; font-weight:bold; }
+.logo span { color:var(--green); }
+nav { display:flex; gap:14px; flex-wrap:wrap; }
+nav a {
+  color:var(--text);
+  text-decoration:none;
+  font-size:13px;
+}
+.hero {
+  padding:55px 6% 45px;
+  text-align:center;
+  background:radial-gradient(ellipse at top,#263b68,#0b1020 70%);
+}
+.badge {
+  display:inline-block;
+  background:#183d3b;
+  color:#75f5d0;
+  border-radius:30px;
+  padding:6px 14px;
+  font-size:12px;
+}
+h1 {
+  font-size:clamp(32px,8vw,55px);
+  line-height:1.15;
+  margin:20px 0;
+}
+.gradient {
+  background:linear-gradient(90deg,#20d6a0,#5797ff,#a879ff);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.hero p {
+  color:var(--muted);
+  max-width:570px;
+  margin:0 auto 25px;
+}
+.btn {
+  border:0;
+  padding:13px 19px;
+  border-radius:12px;
+  font-weight:bold;
+  cursor:pointer;
+  background:var(--green);
+  color:#071b18;
+  display:inline-block;
+  text-decoration:none;
+}
+.btn.secondary {
+  background:#273653;
+  color:white;
+}
+.stats {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  max-width:650px;
+  margin:30px auto 0;
+}
+.stat {
+  background:#18243b;
+  border:1px solid #293956;
+  border-radius:13px;
+  padding:13px 5px;
+}
+.stat strong { display:block; color:var(--green); font-size:20px; }
+.stat small { color:var(--muted); }
+section { padding:35px 5%; scroll-margin-top:85px; }
+.section-title { text-align:center; margin-bottom:25px; }
+.section-title h2 { margin-bottom:4px; font-size:28px; }
+.section-title p { color:var(--muted); margin-top:0; }
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
+  gap:14px;
+}
+.card {
+  background:var(--card);
+  border:1px solid #293650;
+  border-radius:17px;
+  padding:20px 16px;
+}
+.feature {
+  cursor:pointer;
+  transition:transform .2s,border-color .2s;
+}
+.feature:hover { transform:translateY(-3px); border-color:var(--green); }
+.icon { font-size:34px; }
+.card h3 { margin:8px 0; font-size:18px; }
+.card p { color:var(--muted); font-size:13px; }
+.card button { width:100%; margin-top:8px; }
+.action { margin-top:12px; }
+input, select {
+  width:100%;
+  padding:13px;
+  border-radius:10px;
+  border:1px solid #34445f;
+  background:#0c1425;
+  color:white;
+  margin:7px 0;
+  font-size:15px;
+}
+.result {
+  background:#10382f;
+  border-radius:10px;
+  padding:12px;
+  margin-top:12px;
+  color:#8af4d4;
+  overflow-wrap:anywhere;
+}
+.question {
+  background:#202d47;
+  padding:15px;
+  border-radius:12px;
+  margin:12px 0;
+}
+.answers {
+  display:grid;
+  gap:8px;
+  margin-top:12px;
+}
+.answers button {
+  background:#293956;
+  border:1px solid #415371;
+  color:white;
+  padding:12px;
+  border-radius:9px;
+  text-align:left;
+  cursor:pointer;
+}
+.answers button:hover { border-color:var(--green); }
+.answers button:disabled { cursor:default; opacity:.85; }
+.hidden { display:none !important; }
+.tool-area { max-width:600px; margin:auto; }
+.article { margin-bottom:14px; }
+footer {
+  padding:30px 6%;
+  text-align:center;
+  background:#10172a;
+  color:var(--muted);
+  font-size:13px;
+}
+footer a { color:var(--green); }
+hr { border:0; border-top:1px solid #293650; }
+@media(max-width:480px) {
+  header { align-items:flex-start; flex-direction:column; }
+  nav { gap:12px; }
+  .hero { padding-top:38px; }
+  .stats { gap:6px; }
+  .stat strong { font-size:17px; }
+  section { padding:30px 4%; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🇳🇬 NAIJA <span>SMART HUB</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#games">Games</a>
+    <a href="#quiz">Quizzes</a>
+    <a href="#tools">Tools</a>
+    <a href="#learn">Learn</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <span class="badge">✨ YOUR FREE LEARNING DESTINATION</span>
+  <h1>Learn More.<br><span class="gradient">Play Smarter.</span></h1>
+  <p>Welcome to Naija Smart Hub! Challenge your brain, test your knowledge and explore useful tools, all in one place.</p>
+  <a href="#games" class="btn">Explore Games 🎮</a>
+  <a href="#quiz" class="btn secondary">Take a Quiz 🧠</a>
+
+  <div class="stats">
+    <div class="stat"><strong>FREE</strong><small>To Explore</small></div>
+    <div class="stat"><strong>24/7</strong><small>Available Online</small></div>
+    <div class="stat"><strong>100%</strong><small>Mobile Friendly</small></div>
+  </div>
+</section>
+
+<section id="games">
+  <div class="section-title">
+    <h2>🎮 Games Zone</h2>
+    <p>Give your brain a fun challenge.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">🔢</div>
+      <h3>Number Challenge</h3>
+      <p>Solve a random maths question.</p>
+      <button class="btn" onclick="newMath()">Play Now</button>
+      <div id="mathgame" class="action">
+        <p id="mathquestion">Tap Play Now to begin.</p>
+        <input id="mathanswer" type="number" placeholder="Your answer">
+        <button class="btn secondary" onclick="checkMath()">Check Answer</button>
+        <p id="mathresult"></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="icon">🧠</div>
+      <h3>Brain Teaser</h3>
+      <p>Test your thinking skills.</p>
+      <p id="riddle">What has hands but cannot clap?</p>
+      <button class="btn" onclick="nextRiddle()">New Challenge</button>
+      <p id="riddleresult"></p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🎯</div>
+      <h3>Quick Quiz</h3>
+      <p>Test your general knowledge.</p>
+      <button class="btn" onclick="location.hash='quiz'">Start Quiz</button>
+    </div>
+  </div>
+</section>
+
+<section id="quiz">
+  <div class="section-title">
+    <h2>🧠 Knowledge Quiz</h2>
+    <p>Answer questions and see your score instantly.</p>
+  </div>
+
+  <div class="card tool-area">
+    <div id="quizstart">
+      <p>Ready to challenge yourself? This quiz contains 5 questions about general knowledge and Nigeria.</p>
+      <button class="btn" onclick="startQuiz()">Start Quiz 🚀</button>
+    </div>
+    <div id="quizplay" class="hidden">
+      <p id="quizprogress"></p>
+      <h3 id="quizquestion"></h3>
+      <div id="quizanswers" class="answers"></div>
+      <p id="quizfeedback"></p>
+      <button id="quiznext" class="btn hidden" onclick="nextQuestion()">Next Question →</button>
+    </div>
+    <div id="quizfinish" class="hidden">
+      <h3>Quiz Completed! 🎉</h3>
+      <p id="quizscore"></p>
+      <button class="btn" onclick="startQuiz()">Play Again</button>
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="section-title">
+    <h2>🛠️ Smart Tools</h2>
+    <p>Free tools for everyday calculations.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">🎂</div>
+      <h3>Age Calculator</h3>
+      <p>Find your age in years.</p>
+      <label for="birthdate">Date of birth</label>
+      <input id="birthdate" type="date">
+      <button class="btn" onclick="calculateAge()">Calculate Age</button>
+      <div id="ageresult" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Percentage Calculator</h3>
+      <p>Calculate a percentage of any number.</p>
+      <input id="percent" type="number" placeholder="Percentage (%)">
+      <input id="total" type="number" placeholder="Number">
+      <button class="btn" onclick="calculatePercent()">Calculate</button>
+      <div id="percentresult" aria-live="polite"></div>
+    </div>
+
+    <div class="card">
+      <div class="icon">➕</div>
+      <h3>Simple Calculator</h3>
+      <p>Add, subtract, multiply or divide.</p>
+      <input id="num1" type="number" placeholder="First number">
+      <select id="operation" aria-label="Math operation">
+        <option value="+">Addition (+)</option>
+        <option value="-">Subtraction (-)</option>
+        <option value="*">Multiplication (×)</option>
+        <option value="/">Division (÷)</option>
+      </select>
+      <input id="num2" type="number" placeholder="Second number">
+      <button class="btn" onclick="calculate()">Calculate</button>
+      <div id="calcresult" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section id="learn">
+  <div class="section-title">
+    <h2>📚 Learning Zone</h2>
+    <p>Small habits can make a big difference.</p>
+  </div>
+
+  <div class="grid">
+    <article class="card article">
+      <div class="icon">📖</div>
+      <h3>Study Smarter</h3>
+      <p>Study in short, focused sessions. Take breaks, practise questions and review topics you find difficult.</p>
+    </article>
+
+    <article class="card article">
+      <div class="icon">🎯</div>
+      <h3>Set Daily Goals</h3>
+      <p>Choose a few achievable learning goals each day. Track your progress and celebrate your improvements.</p>
+    </article>
+
+    <article class="card article">
+      <div class="icon">💡</div>
+      <h3>Learn by Practising</h3>
+      <p>Test yourself instead of only rereading notes. Explain what you have learned in your own words.</p>
+    </article>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-title">
+    <h2>About Naija Smart Hub</h2>
+  </div>
+  <div class="card tool-area">
+    <p>Naija Smart Hub is a learning and entertainment website designed to make knowledge, quizzes, games and everyday tools accessible on mobile devices.</p>
+    <p>We aim to publish helpful, accurate and original resources for our visitors.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title">
+    <h2>Contact & Privacy</h2>
+  </div>
+  <div class="card tool-area">
+    <h3>Contact Us</h3>
+    <p>For questions or feedback, prepare an email to the website owner.</p>
+    <p>Replace the example email below with your real contact email before publishing.</p>
+    <a class="btn" href="mailto:YOUR-EMAIL@example.com">Email Us</a>
+    <hr>
+    <h3>Privacy Information</h3>
+    <p>This initial version runs its games and calculators in your browser. It does not include a registration system or intentionally send calculator inputs to a server.</p>
+    <p>Before adding analytics, advertisements, contact forms or other third-party services, publish a complete privacy policy explaining the data they collect and how it is used.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Naija Smart Hub. All rights reserved.</p>
+  <p>Built to help you learn, play and grow. 🇳🇬</p>
+  <a href="#about">About</a> · <a href="#contact">Contact & Privacy</a> · <a href="#home">Back to top ↑</a>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+let mathCorrect = 0;
+
+function newMath() {
+  const a = Math.floor(Math.random()*20)+1;
+  const b = Math.floor(Math.random()*20)+1;
+  const op = Math.random() < 0.5 ? "+" : "-";
+  mathCorrect = op === "+" ? a+b : a-b;
+  document.getElementById("mathquestion").textContent =
+    "What is " + a + " " + op + " " + b + "?";
+  document.getElementById("mathanswer").value = "";
+  document.getElementById("mathresult").textContent = "";
+}
+
+function checkMath() {
+  const input = document.getElementById("mathanswer").value;
+  const result = document.getElementById("mathresult");
+  if(input.trim() === "") {
+    result.textContent = "Enter your answer first.";
+    return;
+  }
+  if(Number(input) === mathCorrect) {
+    result.textContent = "Correct! Excellent work! 🎉";
+  } else {
+    result.textContent = "Not quite. Try again!";
+  }
+}
+
+const riddles = [
+  ["What has hands but cannot clap?", "A clock"],
+  ["What gets wetter as it dries?", "A towel"],
+  ["What has keys but opens no locks?", "A piano"],
+  ["What has a face and two hands but no arms?", "A clock"],
+  ["What has to be broken before you can use it?", "An egg"]
+];
+let riddleIndex = 0;
+
+function nextRiddle() {
+  riddleIndex = (riddleIndex+1) % riddles.length;
+  document.getElementById("riddle").textContent = riddles[riddleIndex][0];
+  document.getElementById("riddleresult").textContent =
+    "Think carefully! Answer: " + riddles[riddleIndex][1];
+}
+
+const questions = [
+  {q:"What is the capital of Nigeria?", a:["Lagos","Abuja","Kano","Kaduna"], c:1},
+  {q:"How many days are in a normal week?", a:["5","6","7","8"], c:2},
+  {q:"Which planet is known as the Red Planet?", a:["Venus","Mars","Jupiter","Mercury"], c:1},
+  {q:"What is 12 × 5?", a:["50","55","60","65"], c:2},
+  {q:"Which ocean is the largest?", a:["Atlantic","Indian","Arctic","Pacific"], c:3}
+];
+
+let qIndex = 0;
+let score = 0;
+let answered = false;
+
+function startQuiz() {
+  qIndex = 0;
+  score = 0;
+  document.getElementById("quizstart").classList.add("hidden");
+  document.getElementById("quizfinish").classList.add("hidden");
+  document.getElementById("quizplay").classList.remove("hidden");
+  showQuestion();
+}
+
+function showQuestion() {
+  answered = false;
+  const q = questions[qIndex];
+  document.getElementById("quizprogress").textContent =
+    "Question " + (qIndex+1) + " of " + questions.length;
+  document.getElementById("quizquestion").textContent = q.q;
+  document.getElementById("quizfeedback").textContent = "";
+  document.getElementById("quiznext").classList.add("hidden");
+
+  const box = document.getElementById("quizanswers");
+  box.innerHTML = "";
+
+  q.a.forEach(function(answer, i) {
+    const button = document.createElement("button");
+    button.textContent = answer;
+    button.onclick = function() { chooseAnswer(i, button); };
+    box.appendChild(button);
+  });
+}
+
+function chooseAnswer(choice, selectedButton) {
+  if(answered) return;
+  answered = true;
+  const q = questions[qIndex];
+  const buttons = document.querySelectorAll("#quizanswers button");
+
+  buttons.forEach(function(button) { button.disabled = true; });
+
+  if(choice === q.c) {
+    score++;
+    document.getElementById("quizfeedback").textContent =
+      "Correct! 🎉";
+  } else {
+    document.getElementById("quizfeedback").textContent =
+      "The correct answer is " + q.a[q.c] + ".";
+  }
+
+  document.getElementById("quiznext").classList.remove("hidden");
+}
+
+function nextQuestion() {
+  qIndex++;
+  if(qIndex < questions.length) {
+    showQuestion();
+  } else {
+    document.getElementById("quizplay").classList.add("hidden");
+    document.getElementById("quizfinish").classList.remove("hidden");
+    document.getElementById("quizscore").textContent =
+      "You scored " + score + " out of " + questions.length + ".";
+  }
+}
+
+function calculateAge() {
+  const value = document.getElementById("birthdate").value;
+  const out = document.getElementById("ageresult");
+
+  if(!value) {
+    out.textContent = "Choose your date of birth.";
+    return;
+  }
+
+  const birth = new Date(value + "T00:00:00");
+  const today = new Date();
+
+  if(birth > today) {
+    out.textContent = "Date of birth cannot be in the future.";
+    return;
+  }
+
+  let age = today.getFullYear() - birth.getFullYear();
+  const beforeBirthday =
+    today.getMonth() < birth.getMonth() ||
+    (today.getMonth() === birth.getMonth() &&
+     today.getDate() < birth.getDate());
+
+  if(beforeBirthday) age--;
+
+  out.innerHTML = '<div class="result">Your age is ' + age + ' years.</div>';
+}
+
+function calculatePercent() {
+  const p = document.getElementById("percent").value;
+  const n = document.getElementById("total").value;
+  const out = document.getElementById("percentresult");
+
+  if(p.trim() === "" || n.trim() === "") {
+    out.textContent = "Enter both numbers.";
+    return;
+  }
+
+  const result = Number(p) * Number(n) / 100;
+  out.innerHTML = '<div class="result">' + p + '% of ' + n + ' = ' + result + '</div>';
+}
+
+function calculate() {
+  const a = document.getElementById("num1").value;
+  const b = document.getElementById("num2").value;
+  const op = document.getElementById("operation").value;
+  const out = document.getElementById("calcresult");
+
+  if(a.trim() === "" || b.trim() === "") {
+    out.textContent = "Enter both numbers.";
+    return;
+  }
+
+  if(op === "/" && Number(b) === 0) {
+    out.textContent = "Cannot divide by zero.";
+    return;
+  }
+
+  let result;
+  if(op === "+") result = Number(a)+Number(b);
+  if(op === "-") result = Number(a)-Number(b);
+  if(op === "*") result = Number(a)*Number(b);
+  if(op === "/") result = Number(a)/Number(b);
+
+  out.innerHTML = '<div class="result">Answer: ' + result + '</div>';
+}
+</script>
+
+</body>
+</html>
