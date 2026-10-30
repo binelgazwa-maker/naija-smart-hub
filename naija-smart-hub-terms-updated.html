@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="Naija Smart Hub — free Nigerian quizzes, brain games, calculators and useful learning guides in one mobile-friendly hub.">
+<title>Naija Smart Hub | Learn, Play, Grow</title>
+<style>
+:root{--bg:#07111f;--panel:#101e31;--panel2:#152640;--line:#243852;--text:#f4f7fb;--muted:#a9b8cc;--green:#20d6a2;--blue:#6ca8ff;--purple:#a78bfa;--yellow:#ffd166;--radius:22px;--shadow:0 14px 36px #0003}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#173457 0,transparent 48%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;padding-bottom:90px}button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.app{max-width:760px;margin:auto;min-height:100vh}.topbar{position:sticky;top:0;z-index:20;background:#07111feF;border-bottom:1px solid #26364a;backdrop-filter:blur(18px);padding:14px 18px 12px}.brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:18px;letter-spacing:-.5px}.logo{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--green),var(--blue));color:#061321;font-size:22px;box-shadow:0 6px 18px #20d6a233}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:1.5px;font-weight:800}.iconbtn{border:1px solid var(--line);background:var(--panel);color:var(--text);width:42px;height:42px;border-radius:14px}.searchbox{display:flex;gap:8px;margin-top:12px}.searchbox input{width:100%;min-width:0;background:#0b1727;border:1px solid var(--line);color:var(--text);border-radius:14px;padding:11px 14px;outline:none}.searchbox input:focus,.field:focus{border-color:var(--green)}main{padding:18px}.hero{position:relative;overflow:hidden;padding:24px 21px;border:1px solid #2c4a62;border-radius:28px;background:linear-gradient(135deg,#123f43 0%,#14294a 55%,#29204d 100%);box-shadow:var(--shadow)}.hero:after{content:"✦";position:absolute;right:16px;top:-25px;font-size:130px;color:#ffffff0b;pointer-events:none}.eyebrow{display:inline-flex;align-items:center;gap:7px;border:1px solid #ffffff26;background:#ffffff0c;padding:6px 10px;border-radius:99px;color:#baf8e6;font-size:11px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}.hero h1{font-size:clamp(30px,8vw,44px);line-height:1.08;letter-spacing:-1.6px;margin:16px 0 12px;max-width:490px}.gradient{background:linear-gradient(90deg,var(--green),#8fd4ff,var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:#d0dced;margin:0 0 19px;max-width:460px}.btnrow{display:flex;gap:10px;flex-wrap:wrap}.btn{border:0;border-radius:14px;padding:12px 16px;font-weight:850;display:inline-flex;justify-content:center;align-items:center;gap:8px}.primary{background:var(--green);color:#062018;box-shadow:0 8px 22px #20d6a226}.secondary{background:#ffffff12;color:var(--text);border:1px solid #ffffff24}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 0 25px}.stat{background:linear-gradient(160deg,#14243a,#0e1a2b);border:1px solid var(--line);padding:14px 10px;border-radius:18px;text-align:center}.stat b{display:block;font-size:18px;color:var(--green)}.stat span{display:block;color:var(--muted);font-size:11px;margin-top:3px}.section{margin:26px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:13px}.sectionhead h2{font-size:21px;letter-spacing:-.5px;margin:0}.sectionhead p{font-size:12px;color:var(--muted);margin:3px 0 0}.tiny{color:var(--green);font-weight:800;font-size:12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.tile{position:relative;min-width:0;text-align:left;background:linear-gradient(145deg,#14243a,#0d1929);border:1px solid var(--line);border-radius:20px;padding:16px;color:var(--text);transition:transform .18s,border-color .18s;box-shadow:0 8px 20px #0001}.tile:active{transform:scale(.98)}.tile:hover{border-color:#3f6984}.tile .emoji{display:grid;place-items:center;width:47px;height:47px;border-radius:15px;background:#ffffff0c;font-size:25px;margin-bottom:13px}.tile h3{font-size:15px;margin:0 0 4px}.tile p{color:var(--muted);font-size:12px;margin:0}.badge{display:inline-block;margin-top:11px;font-size:10px;font-weight:800;color:#a7f6dd;background:#20d6a214;border:1px solid #20d6a22b;padding:4px 8px;border-radius:99px}.panel{background:linear-gradient(145deg,#13233a,#0d1929);border:1px solid var(--line);border-radius:22px;padding:17px;box-shadow:var(--shadow)}.panel h3{margin:0 0 8px}.panel p{color:var(--muted)}.hidden{display:none!important}.field{width:100%;padding:12px 13px;background:#081423;border:1px solid var(--line);border-radius:13px;color:var(--text);outline:none;margin:6px 0 12px}.label{font-size:12px;color:var(--muted);font-weight:700}.answers{display:grid;gap:9px;margin:15px 0}.answer{border:1px solid var(--line);border-radius:14px;padding:12px;background:#0a1728;color:var(--text);text-align:left}.answer:hover{border-color:var(--blue)}.answer.correct{border-color:var(--green);background:#20d6a21b}.answer.wrong{border-color:#ff7b88;background:#ff7b8818}.result{margin-top:12px;border-radius:14px;background:#ffffff0a;padding:12px;color:var(--muted)}.tooltabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.pill{border:1px solid var(--line);background:#0a1728;color:var(--muted);padding:8px 12px;border-radius:99px;font-size:12px;font-weight:800}.pill.active{background:#20d6a21a;border-color:var(--green);color:var(--green)}.calcgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.calcbtn{background:#192b43;border:1px solid var(--line);border-radius:13px;padding:14px 5px;color:var(--text);font-weight:800}.calcbtn.op{color:var(--green)}.calcdisplay{width:100%;background:#07111f;color:var(--text);border:1px solid var(--line);border-radius:14px;padding:15px;text-align:right;font-size:24px}.article{padding:16px 0;border-bottom:1px solid var(--line)}.article:last-child{border-bottom:0}.article h3{font-size:16px;margin:0 0 5px}.article p{font-size:13px;margin:0;color:var(--muted)}.foot{padding:24px 18px 12px;color:var(--muted);font-size:12px;text-align:center}.footlinks{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin:12px 0 18px}.footlinks button{border:0;background:none;color:#c4d4e8;font-size:12px}.bottomnav{position:fixed;bottom:0;left:0;right:0;z-index:30;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:#07111ff2;border-top:1px solid #26364a;backdrop-filter:blur(18px)}.navinner{max-width:760px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:4px}.navitem{border:0;background:transparent;color:#8194ad;font-size:10px;font-weight:750;padding:6px 2px;border-radius:12px}.navitem span{display:block;font-size:19px;line-height:1.3;margin-bottom:3px}.navitem.active{color:var(--green);background:#20d6a212}.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%);z-index:50;background:#e9fff7;color:#062018;border-radius:12px;padding:10px 15px;font-weight:800;font-size:13px;box-shadow:var(--shadow);max-width:90vw}.privacytext{font-size:13px;color:var(--muted)}.privacytext h3{color:var(--text);font-size:15px;margin:18px 0 5px}.notice{border:1px solid #ffd16640;background:#ffd16610;color:#ffe6a1;padding:12px;border-radius:14px;font-size:12px;margin-top:12px}
+@media(min-width:620px){main{padding:24px}.hero{padding:32px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.tile{padding:18px}.topbar{padding-left:24px;padding-right:24px}}
+@media(max-width:360px){main{padding:12px}.hero{padding:19px}.grid{gap:8px}.tile{padding:12px}.tile .emoji{width:40px;height:40px}.stat{padding:11px 5px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+ <div class="brandrow">
+  <a class="brand" href="#home" aria-label="Naija Smart Hub home"><span class="logo">🇳🇬</span><span>NAIJA SMART HUB<small>LEARN · PLAY · GROW</small></span></a>
+  <button class="iconbtn" id="themeBtn" aria-label="Switch appearance" title="Switch appearance">☼</button>
+ </div>
+ <div class="searchbox"><input id="searchInput" type="search" placeholder="Search games, quizzes, tools…" aria-label="Search site"><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div>
+</header>
+<main>
+<section id="home">
+ <div class="hero">
+  <span class="eyebrow">✦ Your everyday smart hub</span>
+  <h1>Learn more.<br><span class="gradient">Play smarter.</span></h1>
+  <p>Challenge your mind, practise useful skills and explore handy tools — all in one place, made for your phone.</p>
+  <div class="btnrow"><button class="btn primary" onclick="go('games')">Explore games <span>↗</span></button><button class="btn secondary" onclick="go('quizzes')">Take a quiz 🧠</button></div>
+ </div>
+ <div class="stats"><div class="stat"><b>FREE</b><span>to explore</span></div><div class="stat"><b>24/7</b><span>online access</span></div><div class="stat"><b>📱</b><span>mobile friendly</span></div></div>
+ <section class="section"><div class="sectionhead"><div><h2>Explore your hub</h2><p>Choose what you want to do today.</p></div><span class="tiny">MADE FOR YOU</span></div>
+ <div class="grid">
+  <button class="tile" onclick="go('games')"><span class="emoji">🎮</span><h3>Games Zone</h3><p>Quick challenges to keep your brain active.</p><span class="badge">PLAY NOW ↗</span></button>
+  <button class="tile" onclick="go('quizzes')"><span class="emoji">🧠</span><h3>Quick Quizzes</h3><p>Test your knowledge and check your score.</p><span class="badge">TEST YOURSELF ↗</span></button>
+  <button class="tile" onclick="go('tools')"><span class="emoji">🧮</span><h3>Smart Tools</h3><p>Calculators for everyday questions.</p><span class="badge">USE TOOLS ↗</span></button>
+  <button class="tile" onclick="go('learn')"><span class="emoji">📚</span><h3>Learn & Grow</h3><p>Short guides and useful learning tips.</p><span class="badge">START LEARNING ↗</span></button>
+ </div></section>
+</section>
+
+<section id="games" class="section">
+ <div class="sectionhead"><div><h2>🎮 Games Zone</h2><p>Small challenges, right on your phone.</p></div></div>
+ <div class="grid">
+  <button class="tile" onclick="openGame('numberGame')"><span class="emoji">🔢</span><h3>Number Challenge</h3><p>Solve a quick maths question.</p></button>
+  <button class="tile" onclick="openGame('riddleGame')"><span class="emoji">💡</span><h3>Brain Teaser</h3><p>Try a riddle and reveal the answer.</p></button>
+ </div>
+ <div id="numberGame" class="panel hidden" style="margin-top:12px"><h3>🔢 Number Challenge</h3><p id="mathQuestion">What is 7 + 5?</p><input class="field" id="mathAnswer" type="number" inputmode="numeric" placeholder="Type your answer"><div class="btnrow"><button class="btn primary" onclick="checkMath()">Check answer</button><button class="btn secondary" onclick="newMath()">New question</button></div><div id="mathResult" class="result hidden" aria-live="polite"></div></div>
+ <div id="riddleGame" class="panel hidden" style="margin-top:12px"><h3>💡 Brain Teaser</h3><p id="riddleQuestion">What has keys but cannot open locks?</p><button class="btn primary" onclick="showRiddle()">Reveal answer</button><button class="btn secondary" onclick="newRiddle()">Next riddle</button><div id="riddleAnswer" class="result hidden"></div></div>
+</section>
+
+<section id="quizzes" class="section">
+ <div class="sectionhead"><div><h2>🧠 Quick Quiz</h2><p>Five questions to get started. Choose one answer each time.</p></div></div>
+ <div class="panel"><div style="display:flex;justify-content:space-between;gap:10px;align-items:center"><span class="eyebrow" id="quizProgress">QUESTION 1 OF 5</span><span class="tiny" id="quizScore">SCORE: 0</span></div><h3 id="quizQuestion" style="margin-top:16px">Loading question…</h3><div id="quizAnswers" class="answers"></div><div class="btnrow"><button id="nextQuizBtn" class="btn primary hidden" onclick="nextQuestion()">Next question →</button><button id="restartQuizBtn" class="btn secondary hidden" onclick="startQuiz()">Try again</button></div><div id="quizFeedback" class="result hidden" aria-live="polite"></div></div>
+</section>
+
+<section id="tools" class="section">
+ <div class="sectionhead"><div><h2>🧮 Smart Tools</h2><p>Simple calculators for everyday use.</p></div></div>
+ <div class="panel"><div class="tooltabs"><button class="pill active" onclick="setTool('basic',this)">Calculator</button><button class="pill" onclick="setTool('percent',this)">Percentage</button><button class="pill" onclick="setTool('age',this)">Age</button></div>
+ <div id="basicTool"><input class="calcdisplay" id="calcDisplay" value="0" readonly aria-label="Calculator display"><div class="calcgrid"><button class="calcbtn" onclick="calcPress('7')">7</button><button class="calcbtn" onclick="calcPress('8')">8</button><button class="calcbtn" onclick="calcPress('9')">9</button><button class="calcbtn op" onclick="calcPress('/')">÷</button><button class="calcbtn" onclick="calcPress('4')">4</button><button class="calcbtn" onclick="calcPress('5')">5</button><button class="calcbtn" onclick="calcPress('6')">6</button><button class="calcbtn op" onclick="calcPress('*')">×</button><button class="calcbtn" onclick="calcPress('1')">1</button><button class="calcbtn" onclick="calcPress('2')">2</button><button class="calcbtn" onclick="calcPress('3')">3</button><button class="calcbtn op" onclick="calcPress('-')">−</button><button class="calcbtn" onclick="calcPress('0')">0</button><button class="calcbtn" onclick="calcPress('.')">.</button><button class="calcbtn op" onclick="calcClear()">AC</button><button class="calcbtn op" onclick="calcPress('+')">+</button><button class="calcbtn op" style="grid-column:span 4;background:#20d6a2;color:#062018" onclick="calcEquals()">Calculate =</button></div></div>
+ <div id="percentTool" class="hidden"><label class="label" for="percentRate">What percentage?</label><input id="percentRate" class="field" type="number" inputmode="decimal" placeholder="e.g. 15"><label class="label" for="percentValue">Of what number?</label><input id="percentValue" class="field" type="number" inputmode="decimal" placeholder="e.g. 2000"><button class="btn primary" onclick="percentageCalc()">Calculate percentage</button><div id="percentResult" class="result hidden"></div></div>
+ <div id="ageTool" class="hidden"><label class="label" for="birthDate">Your date of birth</label><input id="birthDate" class="field" type="date"><button class="btn primary" onclick="ageCalc()">Calculate age</button><div id="ageResult" class="result hidden"></div></div>
+ </div>
+</section>
+
+<section id="learn" class="section">
+ <div class="sectionhead"><div><h2>📚 Learn & Grow</h2><p>Short, practical guides to build good habits.</p></div></div>
+ <div class="panel">
+  <article class="article"><h3>🎯 How to study more effectively</h3><p>Choose one clear topic, study in short focused sessions, take a brief break, then test yourself without looking at your notes. Return to difficult topics later.</p></article>
+  <article class="article"><h3>💡 Build a simple daily learning habit</h3><p>Set a realistic daily goal, remove distractions, keep track of what you learn and review your progress each week. Consistency is more useful than a huge plan you cannot maintain.</p></article>
+  <article class="article"><h3>🔐 Stay safer online</h3><p>Use strong, unique passwords, turn on two-step verification when available, avoid suspicious links and never share passwords or verification codes with anyone.</p></article>
+  <article class="article"><h3>🧮 A quick percentage example</h3><p>To find 10% of 500, calculate 500 × 10 ÷ 100 = 50. For any percentage, multiply the number by the percentage and divide by 100.</p></article>
+ </div>
+</section>
+
+<section id="about" class="section hidden">
+ <div class="sectionhead"><div><h2>ℹ️ About Naija Smart Hub</h2><p>Learn more. Play smarter. Find useful tools in one place.</p></div></div>
+ <div class="panel">
+  <p><strong>Naija Smart Hub</strong> is an online learning and entertainment platform designed to make useful digital activities simple, accessible and enjoyable.</p>
+  <p>Our website brings together:</p>
+  <ul>
+   <li><strong>Interactive quizzes</strong> to practise general knowledge and learn new facts.</li>
+   <li><strong>Brain games and challenges</strong> for fun problem-solving and thinking practice.</li>
+   <li><strong>Everyday calculators</strong> for quick, practical calculations.</li>
+   <li><strong>Learning resources</strong> with short guides and helpful information.</li>
+  </ul>
+  <p><strong>Our mission</strong> is to bring learning, entertainment and practical digital tools together in one convenient, mobile-friendly place.</p>
+  <p>We aim to keep our content clear and useful, and we may improve or add features over time.</p>
+  <p><strong>Contact:</strong> <a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a></p>
+ </div>
+</section>
+<section id="contact" class="section hidden">
+ <div class="sectionhead"><div><h2>✉️ Contact</h2><p>We welcome useful feedback and corrections.</p></div></div>
+ <div class="panel"><p>For questions, feedback or correction requests, email the Naija Smart Hub team:</p><p><strong><a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a></strong></p></div>
+</section>
+<section id="privacy" class="section hidden">
+ <div class="sectionhead"><div><h2>🔒 Privacy Policy</h2><p>How this site handles information.</p></div></div>
+ <div class="panel privacytext">
+<p><b>Last updated:</b> 30 October 2026</p>
+<p>Naija Smart Hub (“we”, “our” or “this website”) provides browser-based games, quizzes, calculators and learning content. This policy explains what information may be handled when you visit the website.</p>
+
+<h3>1. Information you provide</h3>
+<p>This version of the website does not require you to create an account and does not contain a registration or contact form. If you contact us by email, we will receive the information you choose to include in your message, such as your email address and the contents of your message. We use it to respond to you and handle your request.</p>
+
+<h3>2. Games, quizzes and calculators</h3>
+<p>Answers and values entered into the games, quizzes and calculators are used to operate those features and display results in your browser. Do not enter passwords, financial details or other sensitive personal information into these tools.</p>
+
+<h3>3. Cookies and similar technologies</h3>
+<p>The website may use essential browser storage or similar technologies to support basic features. At the time this policy was updated, we have not intentionally added third-party analytics or advertising services. If we add services that use cookies or similar technologies, we will update this policy to explain them before or when they are introduced.</p>
+
+<h3>4. Advertising</h3>
+<p>Advertising is not currently enabled on this website. If we later use Google AdSense or another advertising provider, that provider may use cookies or similar technologies to show, measure or personalise advertisements, subject to its own policies and applicable settings. We will update this policy and provide any required notices or choices before enabling advertising.</p>
+
+<h3>5. Third-party services and links</h3>
+<p>If the website later includes links to third-party websites or services, those services operate under their own privacy policies. We are not responsible for the privacy practices of websites we do not operate.</p>
+
+<h3>6. Data security and retention</h3>
+<p>We take reasonable steps appropriate to this small website. Email messages sent to us may be kept for as long as reasonably needed to respond, maintain records or address follow-up questions. No method of internet transmission or electronic storage can be guaranteed to be completely secure.</p>
+
+<h3>7. Children’s privacy</h3>
+<p>This website is intended for a general audience. We do not knowingly ask children to provide personal information. Parents or guardians who believe a child has sent us personal information may contact us so we can review the request.</p>
+
+<h3>8. Your choices and questions</h3>
+<p>You can choose not to send us an email or enter information into the website’s tools. For privacy questions or requests relating to an email you have sent us, contact <a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a>.</p>
+
+<h3>9. Changes to this policy</h3>
+<p>We may update this policy when the website’s features or services change. The “Last updated” date at the top will show when the latest changes were made.</p>
+
+<div class="notice">This policy is a practical website notice, not legal advice. Review it again whenever you add advertising, analytics, forms, accounts, embedded content or other third-party services. Make sure it matches the website’s actual practices and the laws that apply to your visitors.</div>
+</div>
+</section>
+<section id="terms" class="section hidden">
+ <div class="sectionhead"><div><h2>📄 Terms and Conditions</h2><p>Simple rules for using Naija Smart Hub.</p></div></div>
+ <div class="panel">
+  <p><strong>Last updated:</strong> 30 October 2026</p>
+  <p>Welcome to Naija Smart Hub. By visiting or using this website, you agree to these Terms and Conditions. If you do not agree, please stop using the website.</p>
+  <h3>1. About the website</h3>
+  <p>Naija Smart Hub provides browser-based games, quizzes, calculators and learning resources for general information, practice and entertainment.</p>
+  <h3>2. Acceptable use</h3>
+  <p>Please use the website lawfully and respectfully. You must not attempt to disrupt the website, interfere with its security or operation, misuse its features, or use it to violate another person's rights or applicable laws.</p>
+  <h3>3. Educational and calculator information</h3>
+  <p>Quizzes and learning materials are provided for general learning and practice. Calculator results are generated from the values entered by the visitor. Check important results independently before relying on them. The website is not a substitute for professional, financial, medical or legal advice.</p>
+  <h3>4. Content and availability</h3>
+  <p>We aim to keep the website useful and available, but features, content and access may change or be temporarily unavailable. We may correct, update, suspend or remove parts of the website when reasonably necessary.</p>
+  <h3>5. Intellectual property</h3>
+  <p>Unless otherwise stated, the website's original text, design and materials belong to Naija Smart Hub or are used with permission. You may use the website for personal, non-commercial purposes. Do not copy, republish or commercially exploit website materials without permission, except where the law allows.</p>
+  <h3>6. Third-party websites and services</h3>
+  <p>The website may link to third-party websites or services. Those services are operated independently and have their own terms and privacy practices. We are not responsible for their content, availability or practices.</p>
+  <h3>7. Disclaimer and limitation</h3>
+  <p>The website is provided on an “as available” basis. To the extent permitted by applicable law, we make no guarantee that it will always be uninterrupted, error-free or suitable for every purpose. Nothing in these terms excludes rights or responsibilities that cannot legally be excluded.</p>
+  <h3>8. Changes to these terms</h3>
+  <p>We may update these Terms and Conditions as the website changes. The “Last updated” date above will show when the latest version was made.</p>
+  <h3>9. Contact</h3>
+  <p>Questions about these terms can be sent to <a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a>.</p>
+  <div class="notice">These terms are a general starting point, not legal advice. Review them for your circumstances and applicable laws, especially before adding paid services, user accounts, user submissions or advertising.</div>
+ </div>
+</section>
+</main>
+<footer class="foot"><div class="brand" style="justify-content:center"><span class="logo">🇳🇬</span><span>NAIJA SMART HUB<small>LEARN · PLAY · GROW</small></span></div><div class="footlinks"><button onclick="go('about')">About</button><button onclick="go('contact')">Contact</button><button onclick="go('privacy')">Privacy Policy</button><button onclick="go('home')">Back to top ↑</button></div><p>Free learning and fun tools, made for mobile.</p><p>© <span id="year"></span> Naija Smart Hub</p></footer>
+</div>
+<nav class="bottomnav" aria-label="Main navigation"><div class="navinner"><button class="navitem active" data-nav="home" onclick="go('home')"><span>⌂</span>Home</button><button class="navitem" data-nav="games" onclick="go('games')"><span>🎮</span>Games</button><button class="navitem" data-nav="quizzes" onclick="go('quizzes')"><span>🧠</span>Quizzes</button><button class="navitem" data-nav="tools" onclick="go('tools')"><span>🧮</span>Tools</button><button class="navitem" data-nav="learn" onclick="go('learn')"><span>📚</span>Learn</button></div></nav>
+<div id="toast" class="toast hidden" role="status"></div>
+<script>
+const $=id=>document.getElementById(id);
+function go(id){const hiddenSections=['about','contact','privacy'];hiddenSections.forEach(s=>$(s).classList.toggle('hidden',s!==id));if(!hiddenSections.includes(id)){document.querySelectorAll('main>section').forEach(s=>{if(['home','games','quizzes','tools','learn'].includes(s.id))s.classList.remove('hidden')})}else{document.querySelectorAll('main>section').forEach(s=>{if(['home','games','quizzes','tools','learn'].includes(s.id))s.classList.add('hidden')})}document.querySelectorAll('.navitem').forEach(n=>n.classList.toggle('active',n.dataset.nav===id));window.scrollTo({top:0,behavior:'smooth'})}
+function toast(msg){$('toast').textContent=msg;$('toast').classList.remove('hidden');setTimeout(()=>$('toast').classList.add('hidden'),2200)}
+$('year').textContent=new Date().getFullYear();
+$('themeBtn').addEventListener('click',()=>{document.body.classList.toggle('light');let light=document.body.classList.contains('light');document.body.style.setProperty('--bg',light?'#edf4f8':'#07111f');document.body.style.setProperty('--panel',light?'#ffffff':'#101e31');document.body.style.setProperty('--panel2',light?'#e5eef6':'#152640');document.body.style.setProperty('--text',light?'#102033':'#f4f7fb');document.body.style.setProperty('--muted',light?'#53677e':'#a9b8cc');document.body.style.setProperty('--line',light?'#d2deea':'#243852');document.body.style.background=light?'#edf4f8':'radial-gradient(ellipse at 50% -15%,#173457 0,transparent 48%),#07111f';$('themeBtn').textContent=light?'☾':'☼';});
+$('searchBtn').onclick=searchSite;$('searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')searchSite()});
+function searchSite(){let q=$('searchInput').value.trim().toLowerCase();if(!q)return toast('Type something to search.');let map=[['game',['game','number','riddle','brain']],['quizzes',['quiz','question','knowledge']],['tools',['tool','calculator','age','percentage','math']],['learn',['learn','study','article','safety']],['privacy',['privacy']],['contact',['contact','email']],['about',['about']]];let hit=map.find(([id,words])=>words.some(w=>q.includes(w)));if(hit){go(hit[0]);toast('Showing '+hit[0]+'.')}else toast('Try searching games, quizzes, tools or learning.')}
+let mathA=0,mathB=0,mathOp='+';
+function openGame(id){$('numberGame').classList.toggle('hidden',id!=='numberGame');$('riddleGame').classList.toggle('hidden',id!=='riddleGame');if(id==='numberGame')newMath();if(id==='riddleGame')newRiddle();$(id).scrollIntoView({behavior:'smooth',block:'nearest'})}
+function newMath(){mathOp=Math.random()<.5?'+':'−';mathA=1+Math.floor(Math.random()*30);mathB=1+Math.floor(Math.random()*20);if(mathOp==='−'&&mathB>mathA)[mathA,mathB]=[mathB,mathA];$('mathQuestion').textContent=`What is ${mathA} ${mathOp} ${mathB}?`;$('mathAnswer').value='';$('mathResult').classList.add('hidden')}
+function checkMath(){let expected=mathOp==='+'?mathA+mathB:mathA-mathB;let v=Number($('mathAnswer').value);$('mathResult').textContent=v===expected?'Correct! Great work. 🎉':`Not quite. The answer is ${expected}. Try a new question!`;$('mathResult').classList.remove('hidden')}
+const riddles=[['What has keys but cannot open locks?','A piano.'],['What gets wetter the more it dries?','A towel.'],['What has a face and two hands but no arms or legs?','A clock.'],['What has to be broken before you can use it?','An egg.'],['What goes up but never comes down?','Your age.'],['What has one eye but cannot see?','A needle.']];
+let ri=0;function newRiddle(){ri=Math.floor(Math.random()*riddles.length);$('riddleQuestion').textContent=riddles[ri][0];$('riddleAnswer').classList.add('hidden');$('riddleAnswer').textContent=''}function showRiddle(){$('riddleAnswer').textContent='Answer: '+riddles[ri][1];$('riddleAnswer').classList.remove('hidden')}
+const questions=[{q:'What is the capital city of Nigeria?',a:['Lagos','Abuja','Kano','Kaduna'],c:1},{q:'How many days are in a standard week?',a:['5','6','7','8'],c:2},{q:'Which planet is known as the Red Planet?',a:['Venus','Mars','Jupiter','Mercury'],c:1},{q:'What is 12 × 3?',a:['24','30','36','42'],c:2},{q:'Which of these is a Nigerian currency unit?',a:['Cedi','Naira','Shilling','Rand'],c:1}];
+let qi=0,score=0,answered=false;
+function startQuiz(){qi=0;score=0;answered=false;$('quizFeedback').classList.add('hidden');$('restartQuizBtn').classList.add('hidden');$('nextQuizBtn').classList.add('hidden');renderQuestion()}
+function renderQuestion(){let q=questions[qi];$('quizProgress').textContent=`QUESTION ${qi+1} OF ${questions.length}`;$('quizScore').textContent='SCORE: '+score;$('quizQuestion').textContent=q.q;$('quizAnswers').innerHTML='';answered=false;q.a.forEach((a,i)=>{let b=document.createElement('button');b.className='answer';b.textContent=String.fromCharCode(65+i)+'. '+a;b.onclick=()=>answerQuiz(i,b);$('quizAnswers').appendChild(b)});$('quizFeedback').classList.add('hidden');$('nextQuizBtn').classList.add('hidden')}
+function answerQuiz(i,btn){if(answered)return;answered=true;let q=questions[qi];[...$('quizAnswers').children].forEach((b,j)=>{b.disabled=true;if(j===q.c)b.classList.add('correct')});if(i===q.c){score++;$('quizFeedback').textContent='Correct! Well done.'}else{$('quizFeedback').textContent='Not quite. The correct answer is '+q.a[q.c]+'.';btn.classList.add('wrong')}$('quizScore').textContent='SCORE: '+score;$('quizFeedback').classList.remove('hidden');if(qi<questions.length-1)$('nextQuizBtn').classList.remove('hidden');else{$('quizQuestion').textContent='Quiz complete!';$('quizProgress').textContent='COMPLETED';$('quizAnswers').innerHTML='';$('quizFeedback').textContent=`You scored ${score} out of ${questions.length}. ${score>=4?'Excellent work!':score>=3?'Good effort — try again to improve.':'Keep practising and give it another try!'}`;$('restartQuizBtn').classList.remove('hidden')}}
+function nextQuestion(){if(qi<questions.length-1){qi++;renderQuestion()}}
+startQuiz();
+function setTool(tool,btn){['basic','percent','age'].forEach(t=>$(t+'Tool').classList.toggle('hidden',t!==tool));document.querySelectorAll('.tooltabs .pill').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}
+let calc='0';function calcPress(v){if(calc==='0'&&'0123456789.'.includes(v))calc=v;else if(calc.length<30)calc+=v;$('calcDisplay').value=calc}
+function calcClear(){calc='0';$('calcDisplay').value=calc}
+function calcEquals(){try{if(!/^[0-9+\-*/.() ]+$/.test(calc))throw 0;let out=Function('"use strict";return ('+calc+')')();if(!Number.isFinite(out))throw 0;calc=String(Math.round(out*1e8)/1e8);$('calcDisplay').value=calc}catch(e){calc='0';$('calcDisplay').value='Error';setTimeout(()=>$('calcDisplay').value=calc,1300)}}
+function percentageCalc(){let r=Number($('percentRate').value),v=Number($('percentValue').value);if($('percentRate').value===''||$('percentValue').value==='')return toast('Enter both numbers first.');$('percentResult').textContent=`${r}% of ${v} = ${(r*v/100).toLocaleString()}`;$('percentResult').classList.remove('hidden')}
+function ageCalc(){let s=$('birthDate').value;if(!s)return toast('Choose your date of birth.');let b=new Date(s+'T00:00:00'),n=new Date();if(b>n)return toast('Date of birth cannot be in the future.');let years=n.getFullYear()-b.getFullYear(),months=n.getMonth()-b.getMonth(),days=n.getDate()-b.getDate();if(days<0){months--;days+=new Date(n.getFullYear(),n.getMonth(),0).getDate()}if(months<0){years--;months+=12}$('ageResult').textContent=`You are ${years} years, ${months} months and ${days} days old.`;$('ageResult').classList.remove('hidden')}
+</script>
+</body>
+</html>
