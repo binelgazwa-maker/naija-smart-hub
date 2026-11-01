@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="Naija Smart Hub — free Nigerian quizzes, brain games, calculators and useful learning guides in one mobile-friendly hub.">
+<title>Naija Smart Hub | Learn, Play, Grow</title>
+<style>
+:root{--bg:#07111f;--panel:#101e31;--panel2:#152640;--line:#243852;--text:#f4f7fb;--muted:#a9b8cc;--green:#20d6a2;--blue:#6ca8ff;--purple:#a78bfa;--yellow:#ffd166;--radius:22px;--shadow:0 14px 36px #0003}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#173457 0,transparent 48%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;padding-bottom:90px}button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.app{max-width:760px;margin:auto;min-height:100vh}.topbar{position:sticky;top:0;z-index:20;background:#07111feF;border-bottom:1px solid #26364a;backdrop-filter:blur(18px);padding:14px 18px 12px}.brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:18px;letter-spacing:-.5px}.logo{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--green),var(--blue));color:#061321;font-size:22px;box-shadow:0 6px 18px #20d6a233}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:1.5px;font-weight:800}.iconbtn{border:1px solid var(--line);background:var(--panel);color:var(--text);width:42px;height:42px;border-radius:14px}.searchbox{display:flex;gap:8px;margin-top:12px}.searchbox input{width:100%;min-width:0;background:#0b1727;border:1px solid var(--line);color:var(--text);border-radius:14px;padding:11px 14px;outline:none}.searchbox input:focus,.field:focus{border-color:var(--green)}main{padding:18px}.hero{position:relative;overflow:hidden;padding:24px 21px;border:1px solid #2c4a62;border-radius:28px;background:linear-gradient(135deg,#123f43 0%,#14294a 55%,#29204d 100%);box-shadow:var(--shadow)}.hero:after{content:"✦";position:absolute;right:16px;top:-25px;font-size:130px;color:#ffffff0b;pointer-events:none}.eyebrow{display:inline-flex;align-items:center;gap:7px;border:1px solid #ffffff26;background:#ffffff0c;padding:6px 10px;border-radius:99px;color:#baf8e6;font-size:11px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}.hero h1{font-size:clamp(30px,8vw,44px);line-height:1.08;letter-spacing:-1.6px;margin:16px 0 12px;max-width:490px}.gradient{background:linear-gradient(90deg,var(--green),#8fd4ff,var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:#d0dced;margin:0 0 19px;max-width:460px}.btnrow{display:flex;gap:10px;flex-wrap:wrap}.btn{border:0;border-radius:14px;padding:12px 16px;font-weight:850;display:inline-flex;justify-content:center;align-items:center;gap:8px}.primary{background:var(--green);color:#062018;box-shadow:0 8px 22px #20d6a226}.secondary{background:#ffffff12;color:var(--text);border:1px solid #ffffff24}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 0 25px}.stat{background:linear-gradient(160deg,#14243a,#0e1a2b);border:1px solid var(--line);padding:14px 10px;border-radius:18px;text-align:center}.stat b{display:block;font-size:18px;color:var(--green)}.stat span{display:block;color:var(--muted);font-size:11px;margin-top:3px}.section{margin:26px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:13px}.sectionhead h2{font-size:21px;letter-spacing:-.5px;margin:0}.sectionhead p{font-size:12px;color:var(--muted);margin:3px 0 0}.tiny{color:var(--green);font-weight:800;font-size:12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.tile{position:relative;min-width:0;text-align:left;background:linear-gradient(145deg,#14243a,#0d1929);border:1px solid var(--line);border-radius:20px;padding:16px;color:var(--text);transition:transform .18s,border-color .18s;box-shadow:0 8px 20px #0001}.tile:active{transform:scale(.98)}.tile:hover{border-color:#3f6984}.tile .emoji{display:grid;place-items:center;width:47px;height:47px;border-radius:15px;background:#ffffff0c;font-size:25px;margin-bottom:13px}.tile h3{font-size:15px;margin:0 0 4px}.tile p{color:var(--muted);font-size:12px;margin:0}.badge{display:inline-block;margin-top:11px;font-size:10px;font-weight:800;color:#a7f6dd;background:#20d6a214;border:1px solid #20d6a22b;padding:4px 8px;border-radius:99px}.panel{background:linear-gradient(145deg,#13233a,#0d1929);border:1px solid var(--line);border-radius:22px;padding:17px;box-shadow:var(--shadow)}.panel h3{margin:0 0 8px}.panel p{color:var(--muted)}.hidden{display:none!important}.field{width:100%;padding:12px 13px;background:#081423;border:1px solid var(--line);border-radius:13px;color:var(--text);outline:none;margin:6px 0 12px}.label{font-size:12px;color:var(--muted);font-weight:700}.answers{display:grid;gap:9px;margin:15px 0}.answer{border:1px solid var(--line);border-radius:14px;padding:12px;background:#0a1728;color:var(--text);text-align:left}.answer:hover{border-color:var(--blue)}.answer.correct{border-color:var(--green);background:#20d6a21b}.answer.wrong{border-color:#ff7b88;background:#ff7b8818}.result{margin-top:12px;border-radius:14px;background:#ffffff0a;padding:12px;color:var(--muted)}.tooltabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.pill{border:1px solid var(--line);background:#0a1728;color:var(--muted);padding:8px 12px;border-radius:99px;font-size:12px;font-weight:800}.pill.active{background:#20d6a21a;border-color:var(--green);color:var(--green)}.calcgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.calcbtn{background:#192b43;border:1px solid var(--line);border-radius:13px;padding:14px 5px;color:var(--text);font-weight:800}.calcbtn.op{color:var(--green)}.calcdisplay{width:100%;background:#07111f;color:var(--text);border:1px solid var(--line);border-radius:14px;padding:15px;text-align:right;font-size:24px}.article{padding:16px 0;border-bottom:1px solid var(--line)}.article:last-child{border-bottom:0}.article h3{font-size:16px;margin:0 0 5px}.article p{font-size:13px;margin:0;color:var(--muted)}.foot{padding:24px 18px 12px;color:var(--muted);font-size:12px;text-align:center}.footlinks{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin:12px 0 18px}.footlinks button{border:0;background:none;color:#c4d4e8;font-size:12px}.bottomnav{position:fixed;bottom:0;left:0;right:0;z-index:30;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:#07111ff2;border-top:1px solid #26364a;backdrop-filter:blur(18px)}.navinner{max-width:760px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:4px}.navitem{border:0;background:transparent;color:#8194ad;font-size:10px;font-weight:750;padding:6px 2px;border-radius:12px}.navitem span{display:block;font-size:19px;line-height:1.3;margin-bottom:3px}.navitem.active{color:var(--green);background:#20d6a212}.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%);z-index:50;background:#e9fff7;color:#062018;border-radius:12px;padding:10px 15px;font-weight:800;font-size:13px;box-shadow:var(--shadow);max-width:90vw}.privacytext{font-size:13px;color:var(--muted)}.privacytext h3{color:var(--text);font-size:15px;margin:18px 0 5px}.notice{border:1px solid #ffd16640;background:#ffd16610;color:#ffe6a1;padding:12px;border-radius:14px;font-size:12px;margin-top:12px}
+@media(min-width:620px){main{padding:24px}.hero{padding:32px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.tile{padding:18px}.topbar{padding-left:24px;padding-right:24px}}
+@media(max-width:360px){main{padding:12px}.hero{padding:19px}.grid{gap:8px}.tile{padding:12px}.tile .emoji{width:40px;height:40px}.stat{padding:11px 5px}}
+
+/* Colourful Technology homepage upgrade */
+:root{--bg:#080d20;--panel:#111a35;--panel2:#1a2750;--line:#35416b;--text:#f8f9ff;--muted:#b8c2df;--green:#38e0b4;--blue:#56b8ff;--purple:#c18cff;--yellow:#ffd66b;--radius:22px;--shadow:0 16px 42px #02061770}
+body{background:radial-gradient(ellipse at 8% 0%,#34205d 0,transparent 34%),radial-gradient(ellipse at 95% 15%,#103d63 0,transparent 30%),#080d20}
+.topbar{background:#090f25ed;border-color:#303b67}.logo{background:linear-gradient(135deg,#ffcf5a,#ff7eb6 48%,#6bc8ff);color:#11152b;box-shadow:0 7px 24px #ff7eb633}
+.hero{border:1px solid #6d5ba5;background:linear-gradient(125deg,#522b87 0%,#214d91 52%,#087f87 100%);box-shadow:0 18px 45px #02061780}
+.eyebrow{color:#fff;background:#ffffff18;border-color:#ffffff3b}.gradient{background:linear-gradient(90deg,#ffe27a,#ff9bc9,#9be5ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.primary{background:linear-gradient(110deg,#ffe16b,#ff9b79);color:#25143d;box-shadow:0 8px 24px #ffad7040}.secondary{background:#ffffff17;border-color:#ffffff38}
+.stat{background:linear-gradient(145deg,#202b55,#151d3b);border-color:#465486}.stat b{color:#71e8d0}
+.tile{background:linear-gradient(145deg,#1c2850,#121a36);border-color:#3b4775;box-shadow:0 10px 25px #02061740}.tile:nth-child(4n+1) .emoji{background:linear-gradient(135deg,#ffcf6b33,#ff7ca833)}.tile:nth-child(4n+2) .emoji{background:linear-gradient(135deg,#7c8cff44,#c18cff33)}.tile:nth-child(4n+3) .emoji{background:linear-gradient(135deg,#45dfc044,#56b8ff33)}.tile:nth-child(4n) .emoji{background:linear-gradient(135deg,#ff8ac044,#ffd66b33)}
+.tile:hover{border-color:#9e91ff;transform:translateY(-3px)}.badge{color:#d5fff4;background:#38e0b418;border-color:#38e0b44a}
+.panel{background:linear-gradient(145deg,#1a2650,#111a35);border-color:#3b4775}.field,.searchbox input,.calcdisplay{background:#0b1330;border-color:#35416b}.answer,.quiz-answer,.subject-choice{background:#151f40;border-color:#3b4775;color:#f8f9ff}.answer.correct,.quiz-answer.correct{background:#123d39;color:#baffeb}.answer.wrong,.quiz-answer.wrong{background:#492638;color:#ffe0e8}
+.pill{background:#111a35;border-color:#35416b}.pill.active{background:#38e0b420;color:#6ff0cf;border-color:#38e0b4}.bottomnav{background:#090f25f5;border-color:#303b67}
+.sectionhead h2{background:linear-gradient(90deg,#fff,#b6c8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+@media(min-width:600px){main{padding:22px}.hero{padding:32px 30px}.grid{gap:14px}.tile{padding:19px}}
+
+main > section{display:none!important}
+main > section.page-active{display:block!important}
+
+/* Professional visual refresh */
+:root{--bg:#081426;--panel:#101f35;--panel2:#172b47;--line:#2b4261;--text:#f7f9ff;--muted:#aebdd2;--green:#42e0b4;--blue:#78b7ff;--purple:#b59bff;--yellow:#ffda7a;--radius:24px;--shadow:0 18px 44px #0005}
+body{background:radial-gradient(ellipse at 10% 0%,#17385a 0,transparent 38%),radial-gradient(ellipse at 100% 20%,#2c2050 0,transparent 32%),var(--bg);background-attachment:fixed}
+main{max-width:980px;margin:0 auto;padding:18px 16px 112px}
+main>section.page-active{animation:pageEnter .28s ease both}
+@keyframes pageEnter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.hero{padding:30px 24px;border:1px solid #ffffff20;background:linear-gradient(130deg,#0e5555 0%,#173b68 54%,#442d72 100%);border-radius:30px;box-shadow:0 22px 55px #0005}
+.hero h1{font-size:clamp(30px,7vw,48px);line-height:1.08;letter-spacing:-1.3px;margin:15px 0}
+.hero p{max-width:570px;line-height:1.65;color:#d4e4f5}
+.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0 18px}
+.sectionhead h2{font-size:clamp(22px,5vw,30px);letter-spacing:-.5px;margin:0}
+.sectionhead p{margin:6px 0 0;color:var(--muted);line-height:1.5}
+.panel,.tile,.card,.result,.article{border:1px solid #ffffff17!important;border-radius:22px!important;background:linear-gradient(145deg,#142842,#0e1c30)!important;box-shadow:0 12px 30px #0002}
+.tile,.card{padding:20px!important;text-align:left;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.tile:active,.card:active{transform:scale(.985)}
+.tile h3,.card h3{font-size:17px;margin:10px 0 6px}
+.tile p,.card p{color:var(--muted);line-height:1.5;font-size:13px}
+.grid{gap:13px}
+.btn{border-radius:14px!important;font-weight:800;letter-spacing:.1px;min-height:44px}
+.btn.primary{background:linear-gradient(120deg,#20c997,#27a9c9)!important;color:#041a20!important;box-shadow:0 8px 20px #20c99730}
+.btn.secondary{border:1px solid #ffffff2c!important;background:#ffffff0d!important;color:var(--text)!important}
+input.field,textarea.field,select.field{border:1px solid #405776!important;border-radius:13px!important;background:#09172a!important;color:var(--text)!important}
+.bottomnav{background:#081426f2!important;border-top:1px solid #ffffff20!important;box-shadow:0 -12px 30px #0003}
+.navinner{max-width:680px}
+.navitem{font-size:11px;min-height:52px;transition:background .2s,color .2s}
+.navitem.active{color:#5ff0c7!important;background:linear-gradient(135deg,#20d6a222,#78b7ff16)!important;outline:1px solid #42e0b42b}
+.navitem span{font-size:21px}
+.eyebrow{letter-spacing:.7px}
+.notice{border-radius:15px!important}
+footer{color:var(--muted)}
+@media(min-width:700px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding-top:26px}.hero{padding:38px}}
+@media(max-width:390px){main{padding-left:12px;padding-right:12px}.hero{padding:23px 18px}.navitem{font-size:9px}}
+
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+ <div class="brandrow">
+  <a class="brand" href="#home" aria-label="Naija Smart Hub home"><span class="logo">🇳🇬</span><span>NAIJA SMART HUB<small>LEARN · PLAY · GROW</small></span></a>
+  <div style="display:flex;gap:7px"><button class="iconbtn" onclick="go('account')" aria-label="Student account" title="Student account">👤</button><button class="iconbtn" id="themeBtn" aria-label="Switch appearance" title="Switch appearance">☼</button></div>
+ </div>
+ <div class="searchbox"><input id="searchInput" type="search" placeholder="Search games, quizzes, tools…" aria-label="Search site"><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div>
+</header>
+<main>
+<section id="home">
+ <div class="hero">
+  <span class="eyebrow">✦ Your everyday smart hub</span>
+  <h1>Learn more.<br><span class="gradient">Play smarter.</span></h1>
+  <p>Challenge your mind, practise useful skills and explore handy tools — all in one place, made for your phone.</p>
+  <div class="btnrow"><button class="btn primary" onclick="go('games')">Explore games <span>↗</span></button><button class="btn secondary" onclick="go('quizzes')">Take a quiz 🧠</button></div>
+ </div>
+ <div class="stats"><div class="stat"><b>400</b><span>quiz questions</span></div><div class="stat"><b>10</b><span>subjects to explore</span></div><div class="stat"><b>📱</b><span>mobile friendly</span></div></div>
+ <section id="home-explore" class="section"><div class="sectionhead"><div><h2>Explore your hub</h2><p>Choose what you want to do today.</p></div><span class="tiny">MADE FOR YOU</span></div>
+ <div class="grid">
+  <button class="tile" onclick="go('games')"><span class="emoji">🎮</span><h3>Games Zone</h3><p>Quick challenges to keep your brain active.</p><span class="badge">PLAY NOW ↗</span></button>
+  <button class="tile" onclick="go('quizzes')"><span class="emoji">🧠</span><h3>Quick Quizzes</h3><p>Test your knowledge and check your score.</p><span class="badge">TEST YOURSELF ↗</span></button>
+  <button class="tile" onclick="go('exam')"><span class="emoji">📝</span><h3>Online Examination</h3><p>Take a timed 40-question practice exam.</p><span class="badge">START EXAM ↗</span></button>
+  <button class="tile" onclick="go('tools')"><span class="emoji">🧮</span><h3>Smart Tools</h3><p>Calculators for everyday questions.</p><span class="badge">USE TOOLS ↗</span></button>
+  <button class="tile" onclick="go('learn')"><span class="emoji">📚</span><h3>Learn & Grow</h3><p>Short guides and useful learning tips.</p><span class="badge">START LEARNING ↗</span></button>
+ </div></section>
+ <section id="home-games-preview" class="section">
+  <div class="panel" style="position:relative;overflow:hidden;background:linear-gradient(120deg,#34205f,#173e70 60%,#087f78);border-color:#7562b5">
+   <div class="eyebrow">⚡ DAILY SMART CHALLENGE</div>
+   <h2 style="margin:12px 0 6px;font-size:23px">Ready to test your brain?</h2>
+   <p style="color:#e0e8ff;margin:0 0 15px">Pick a subject and take on 40 questions. Learn something new with every attempt.</p>
+   <button class="btn primary" onclick="startDailyChallenge()">Start 10-question challenge ↗</button><button class="btn secondary" onclick="go('leaderboard')">View leaderboard 🏆</button>
+  </div>
+ </section>
+ <section id="home-learning-preview" class="section">
+  <div class="panel" style="display:flex;gap:13px;align-items:flex-start;border-color:#6a5a9d">
+   <div style="font-size:28px">🌟</div><div><div class="tiny">A LITTLE MOTIVATION</div><h3 style="margin:5px 0">Small steps every day lead to big progress.</h3><p style="margin:0;font-size:13px">Keep learning, stay curious and celebrate what you discover.</p></div>
+  </div>
+ </section>
+ <section id="home-progress-preview" class="section">
+  <div class="panel" style="background:linear-gradient(120deg,#4a286f,#1b4774);border-color:#8064bd">
+   <div class="eyebrow">🏆 SMART HUB COMPETITION</div>
+   <h2 style="margin:10px 0 5px">Earn points. Track your progress.</h2>
+   <p style="margin:0 0 14px;color:#e0e8ff">Take the daily 10-question challenge and see your best scores on this device.</p>
+   <button class="btn primary" onclick="go('leaderboard')">Open leaderboard ↗</button>
+  </div>
+ </section>
+</section>
+
+<section id="games" class="section">
+ <div class="sectionhead"><div><h2>🎮 Games Zone</h2><p>Small challenges, right on your phone.</p></div></div>
+ <div class="grid">
+  <button class="tile" onclick="openGame('numberGame')"><span class="emoji">🔢</span><h3>Number Challenge</h3><p>Solve a quick maths question.</p></button>
+  <button class="tile" onclick="openGame('riddleGame')"><span class="emoji">💡</span><h3>Brain Teaser</h3><p>Try a riddle and reveal the answer.</p></button>
+ </div>
+ <div id="numberGame" class="panel hidden" style="margin-top:12px"><h3>🔢 Number Challenge</h3><p id="mathQuestion">What is 7 + 5?</p><input class="field" id="mathAnswer" type="number" inputmode="numeric" placeholder="Type your answer"><div class="btnrow"><button class="btn primary" onclick="checkMath()">Check answer</button><button class="btn secondary" onclick="newMath()">New question</button></div><div id="mathResult" class="result hidden" aria-live="polite"></div></div>
+ <div id="riddleGame" class="panel hidden" style="margin-top:12px"><h3>💡 Brain Teaser</h3><p id="riddleQuestion">What has keys but cannot open locks?</p><button class="btn primary" onclick="showRiddle()">Reveal answer</button><button class="btn secondary" onclick="newRiddle()">Next riddle</button><div id="riddleAnswer" class="result hidden"></div></div>
+</section>
+
+
+<section id="quizzes" class="section">
+ <div class="sectionhead"><div><h2>🧠 Subject Quiz Centre</h2><p>Choose a subject and practise with 40 multiple-choice questions.</p></div></div>
+ <div class="panel" id="subjectPicker">
+  <h3 style="margin-top:0">📚 Choose Your Subjects</h3>
+  <p style="color:var(--muted)">Tap any bright subject card below to begin. Each subject has 40 questions.</p>
+  <div id="subjectGrid" class="subject-grid"></div>
+ </div>
+ <div class="panel hidden" id="subjectQuiz">
+  <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+   <div><div id="quizSubjectName" style="font-weight:800;font-size:18px">Subject</div><div id="quizProgress" style="color:var(--muted);font-size:13px">QUESTION 1 OF 40</div></div>
+   <div id="quizScore" style="font-weight:800">SCORE: 0</div>
+  </div>
+  <div style="height:8px;background:var(--line,#ddd);border-radius:20px;margin:15px 0;overflow:hidden"><div id="quizBar" style="height:100%;width:0%;background:var(--accent,#18a879);transition:width .2s"></div></div>
+  <h3 id="quizQuestion" style="line-height:1.5;margin:18px 0">Question</h3>
+  <div id="quizAnswers" class="quiz-answer-grid"></div>
+  <p id="quizFeedback" class="hidden" style="padding:12px;border-radius:12px;background:var(--soft,#eef7f2);margin-top:14px"></p>
+  <div id="certificateAction" class="hidden" style="margin-top:12px"><button id="certificateButton" class="btn primary" onclick="downloadMyCertificate()">🏆 Download achievement certificate</button><p class="notice">Certificates are available for quiz scores of 80% or higher.</p></div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+   <button id="nextQuizBtn" class="btn hidden" type="button" onclick="nextSubjectQuestion()">Next question →</button>
+   <button id="retryQuizBtn" class="btn hidden" type="button" onclick="startSubjectQuiz(currentSubject)">Try this subject again</button>
+   <button class="btn secondary" type="button" onclick="backToSubjects()">Choose another subject</button>
+  </div>
+ </div>
+</section>
+<style>
+/* Highly visible subject selector: strong contrast, clear cards and responsive layout */
+#subjectPicker{display:block!important;visibility:visible!important;opacity:1!important;background:linear-gradient(145deg,#202b60 0%,#18234b 55%,#252052 100%);border:2px solid #8b7cff;box-shadow:0 16px 38px #0007;padding:20px;margin-top:12px}
+#subjectPicker h3{font-size:21px;color:#fff;margin:0 0 7px}
+#subjectPicker>p{color:#e0e7ff!important;font-size:14px;line-height:1.5;margin:0}
+.subject-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.subject-choice{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:5px;width:100%;min-width:0;min-height:104px;padding:15px 13px;border:2px solid #6475c8;border-radius:17px;background:linear-gradient(145deg,#303e83,#202b60);color:#fff!important;font-weight:850;font-size:14px;line-height:1.3;text-align:left;cursor:pointer;box-shadow:0 7px 16px #050a2580;transition:transform .18s,border-color .18s,filter .18s}
+.subject-choice::before{content:'📘';font-size:23px;line-height:1.2}
+.subject-choice:nth-child(2n)::before{content:'🧠'}
+.subject-choice:nth-child(3n)::before{content:'⭐'}
+.subject-choice:hover,.subject-choice:focus-visible{border-color:#ffe17a;filter:brightness(1.18);transform:translateY(-2px);outline:3px solid #ffe17a55;outline-offset:2px}
+.subject-choice small{display:block;font-weight:700;color:#c9d7ff!important;font-size:12px;margin-top:2px}
+@media(min-width:520px){.subject-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.subject-choice{min-height:112px;padding:17px}}
+.quiz-answer-grid{display:grid;gap:10px}
+#quizAnswers .quiz-answer{display:block;width:100%;min-height:58px;padding:16px 18px;border:1px solid #7182bd!important;border-radius:14px!important;background:linear-gradient(135deg,#26386b,#1b2850)!important;color:#ffffff!important;-webkit-text-fill-color:#ffffff!important;text-align:left;font-size:16px;font-weight:750;line-height:1.4;cursor:pointer;box-shadow:0 5px 14px #0004;appearance:none;-webkit-appearance:none}
+#quizAnswers .quiz-answer:disabled{cursor:default;opacity:1!important}
+#quizAnswers .quiz-answer.correct{border:2px solid #38e0a0!important;background:#124c3b!important;color:#ffffff!important;-webkit-text-fill-color:#ffffff!important}
+#quizAnswers .quiz-answer.wrong{border:2px solid #ff8585!important;background:#632b3a!important;color:#ffffff!important;-webkit-text-fill-color:#ffffff!important}
+.quiz-answer:disabled{cursor:default;opacity:1}
+.quiz-answer.correct{border-color:#159b62;background:#e5f7ed;color:#145b3a}
+.quiz-answer.wrong{border-color:#d64b4b;background:#fff0f0;color:#922d2d}
+</style>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script>
+const subjectBanks = {"General Knowledge":[["What is the capital of Nigeria?","Abuja","Lagos","Kano","Ibadan",0],["Which is the largest ocean on Earth?","Pacific Ocean","Atlantic Ocean","Indian Ocean","Arctic Ocean",0],["How many days are in a leap year?","366","365","364","360",0],["Which planet is called the Red Planet?","Mars","Venus","Jupiter","Mercury",0],["What is the currency of Japan?","Yen","Won","Yuan","Rupee",0],["Which animal is the largest land mammal?","African elephant","Giraffe","Hippopotamus","Rhinoceros",0],["How many colours are traditionally named in a rainbow?","Seven","Five","Six","Eight",0],["Which instrument measures temperature?","Thermometer","Barometer","Compass","Ruler",0],["Which country is famous for the Great Pyramid of Giza?","Egypt","Greece","Mexico","India",0],["What is the freezing point of water at standard pressure?","0°C","10°C","32°C","100°C",0],["Which gas do humans need for respiration?","Oxygen","Carbon dioxide","Nitrogen","Hydrogen",0],["How many sides does a hexagon have?","Six","Five","Seven","Eight",0],["Which is the nearest star to Earth?","The Sun","Sirius","Polaris","Proxima Centauri",0],["What is the main language spoken in Brazil?","Portuguese","Spanish","French","English",0],["Which continent is the Sahara Desert in?","Africa","Asia","Australia","South America",0],["What is the young one of a sheep called?","Lamb","Calf","Foal","Kid",0],["Which day comes after Wednesday?","Thursday","Tuesday","Friday","Monday",0],["How many minutes are in one hour?","60","30","90","100",0],["Which material is attracted to a magnet?","Iron","Wood","Plastic","Glass",0],["What is the opposite direction to north?","South","East","West","North-east",0],["Which organ pumps blood around the body?","Heart","Lungs","Kidney","Stomach",0],["Which bird is widely associated with delivering eggs in farming?","Hen","Eagle","Owl","Parrot",0],["How many months are in a year?","12","10","11","13",0],["Which is the largest planet in our solar system?","Jupiter","Saturn","Earth","Neptune",0],["What do bees collect from flowers?","Nectar","Sand","Leaves","Bark",0],["Which shape has three sides?","Triangle","Square","Pentagon","Circle",0],["What is the capital of Ghana?","Accra","Lagos","Lomé","Dakar",0],["Which device is used to find direction?","Compass","Microscope","Telescope","Calculator",0],["Which season is usually the wettest in much of southern Nigeria?","Rainy season","Harmattan","Winter","Autumn",0],["What is the adult human body supported by?","Skeleton","Feathers","Shell","Scales",0],["Which natural satellite orbits Earth?","Moon","Sun","Mars","Venus",0],["Which sport uses a racket and shuttlecock?","Badminton","Football","Basketball","Hockey",0],["What is the chemical symbol for gold?","Au","Ag","Go","Gd",0],["Which continent contains Nigeria?","Africa","Europe","Asia","North America",0],["What is a person who studies weather called?","Meteorologist","Geologist","Biologist","Astronomer",0],["Which number is an even number?","24","17","31","45",0],["What do we call water in its solid state?","Ice","Steam","Vapour","Mist",0],["Which is the world's largest hot desert?","Sahara","Gobi","Kalahari","Arabian",0],["What is the main source of energy for Earth?","Sun","Moon","Wind","Coal",0],["Which public holiday celebrates Nigeria's independence?","1 October","1 January","1 May","12 June",0]],"English Language":[["Choose the correctly spelt word.","Accommodation","Acommodation","Accomodation","Acomodation",0],["What is the plural of 'child'?","Children","Childs","Childes","Childrens",0],["Choose the opposite of 'ancient'.","Modern","Old","Historic","Former",0],["Which word is a noun?","Teacher","Quickly","Beautiful","Run",0],["Choose the correct sentence.","She has gone home.","She have gone home.","She gone home.","She going home.",0],["What is the past tense of 'write'?","Wrote","Written","Writing","Writes",0],["Choose a synonym for 'happy'.","Joyful","Angry","Tired","Afraid",0],["Which punctuation mark ends a direct question?","Question mark","Full stop","Comma","Colon",0],["Identify the adjective: 'The bright sun shone.'","Bright","The","Sun","Shone",0],["What is the opposite of 'generous'?","Stingy","Kind","Helpful","Giving",0],["Choose the correct article: '___ honest person'.","An","A","Thee","No article",0],["Which is a pronoun?","They","Table","Green","Speak",0],["What is the plural of 'mouse'?","Mice","Mouses","Mousees","Meese",0],["Choose the correct spelling.","Necessary","Neccessary","Necesary","Nessesary",0],["Which word is an adverb?","Carefully","Careful","Care","Caring",0],["Choose the correct preposition: 'The book is ___ the table.'","On","At","By","Into",0],["What is the comparative form of 'good'?","Better","Gooder","Best","More good",0],["Which sentence is in the future tense?","They will travel tomorrow.","They travelled yesterday.","They travel daily.","They are travelling now.",0],["Choose the antonym of 'expand'.","Contract","Increase","Enlarge","Extend",0],["Which word is a conjunction?","Although","Quickly","Blue","House",0],["What is the past participle of 'eat'?","Eaten","Ate","Eating","Eats",0],["Choose the correctly punctuated sentence.","Mary said, 'Come here.'","Mary said 'Come here'.","Mary said, Come here.","Mary said 'Come here.'",0],["Which is a collective noun?","Team","Player","Ball","Stadium",0],["What is the feminine form of 'king'?","Queen","Princess","Duchess","Lady",0],["Choose the correct verb: 'The boys ___ playing.'","Are","Is","Am","Was",0],["Which word means 'to look closely'?","Examine","Ignore","Forget","Escape",0],["Identify the subject: 'The little dog barked loudly.'","The little dog","Barked","Loudly","Dog barked",0],["What is the plural of 'leaf'?","Leaves","Leafs","Leafes","Leavs",0],["Choose the correct phrase.","Between you and me","Between you and I","Between I and you","Between me and I",0],["Which is an interjection?","Wow!","Because","Under","Slowly",0],["What is the opposite of 'borrow'?","Lend","Take","Keep","Buy",0],["Choose the correct form: 'I ___ seen that film.'","Have","Has","Had been","Am",0],["Which word is closest in meaning to 'brief'?","Short","Wide","Heavy","Late",0],["What type of sentence gives a command?","Imperative","Interrogative","Exclamatory","Declarative",0],["Choose the correct spelling.","Separate","Seperate","Seperete","Separete",0],["Which word is a verb?","Decide","Decision","Decisive","Decisively",0],["What is the opposite of 'victory'?","Defeat","Success","Triumph","Reward",0],["Choose the correct sentence.","Neither answer is correct.","Neither answers are correct.","Neither answer are correct.","Neither is answers correct.",0],["Which is a proper noun?","River Niger","river","water","country",0],["What is the plural of 'tooth'?","Teeth","Tooths","Toothes","Teeths",0]],"Mathematics":[["What is 12 × 8?","96","86","108","84",0],["What is 144 ÷ 12?","12","10","14","16",0],["Find 25% of 200.","50","25","75","100",0],["Solve: 7 + 9 × 2.","25","32","23","18",0],["What is the square of 13?","169","156","144","196",0],["What is the perimeter of a square of side 6 cm?","24 cm","12 cm","36 cm","18 cm",0],["Simplify: 3/6.","1/2","1/3","2/3","3/4",0],["What is 0.75 as a fraction?","3/4","1/4","2/5","7/5",0],["Solve: x + 5 = 17.","12","10","22","13",0],["What is the area of a rectangle 8 cm by 5 cm?","40 cm²","26 cm²","13 cm²","80 cm²",0],["Find the mean of 2, 4, 6 and 8.","5","4","6","8",0],["What is 15% of 300?","45","30","60","75",0],["How many degrees are in a right angle?","90°","45°","180°","360°",0],["What is 2³?","8","6","9","12",0],["Convert 2.5 metres to centimetres.","250 cm","25 cm","2,500 cm","205 cm",0],["What is the next prime number after 7?","11","9","10","13",0],["Solve: 36 - 19.","17","15","18","16",0],["What is 5/8 + 1/8?","3/4","1/2","5/8","7/8",0],["Find the circumference formula for a circle.","2πr","πr²","l × w","4s",0],["What is √81?","9","8","7","10",0],["If 3 pens cost ₦150, what is the cost of one pen?","₦50","₦30","₦75","₦100",0],["Express 0.2 as a percentage.","20%","2%","200%","0.2%",0],["Solve: 4x = 28.","7","6","8","9",0],["What is the sum of angles in a triangle?","180°","90°","270°","360°",0],["What is 1,000 - 375?","625","675","725","575",0],["Find the median of 3, 9, 5, 7, 1.","5","3","7","9",0],["What is 9² - 5²?","56","46","64","36",0],["A dozen contains how many items?","12","10","20","24",0],["What is 3.6 + 2.45?","6.05","5.95","6.5","5.05",0],["What is the LCM of 4 and 6?","12","24","6","10",0],["What is the HCF of 18 and 24?","6","3","9","12",0],["Convert 3/5 to a percentage.","60%","30%","50%","80%",0],["What is the volume of a cube of side 3 cm?","27 cm³","9 cm³","18 cm³","36 cm³",0],["Solve: 2(x + 3) = 14.","4","5","7","2",0],["What is 7.5 × 10?","75","7.5","750","0.75",0],["How many millimetres are in 1 centimetre?","10","100","1,000","5",0],["What is the reciprocal of 4?","1/4","4","-4","0",0],["Find 40% of 90.","36","30","40","45",0],["What is the value of π approximately?","3.14","2.14","4.13","22.4",0],["What is 15 × 15?","225","215","250","125",0]],"Biology":[["Basic unit of life?","Cell","Tissue","Organ","System",0],["Organelle that releases energy?","Mitochondrion","Ribosome","Vacuole","Nucleus",0],["Green pigment in plants?","Chlorophyll","Haemoglobin","Melanin","Keratin",0],["Process by which plants make food?","Photosynthesis","Respiration","Transpiration","Digestion",0],["Gas absorbed by plants in photosynthesis?","Carbon dioxide","Oxygen","Nitrogen","Hydrogen",0],["Organ that pumps blood?","Heart","Liver","Lung","Kidney",0],["Largest organ of the human body?","Skin","Liver","Brain","Heart",0],["Blood cells that fight infection?","White blood cells","Red blood cells","Platelets","Plasma",0],["Blood cells that carry oxygen?","Red blood cells","White blood cells","Platelets","Neurons",0],["Human breathing organ?","Lungs","Kidneys","Stomach","Pancreas",0],["Organ that filters blood to form urine?","Kidney","Heart","Lung","Spleen",0],["Where does digestion begin?","Mouth","Stomach","Small intestine","Large intestine",0],["Which nutrient is a major energy source?","Carbohydrate","Vitamin C","Mineral salt","Water",0],["Vitamin produced in skin with sunlight?","Vitamin D","Vitamin A","Vitamin B12","Vitamin K",0],["Study of heredity?","Genetics","Ecology","Anatomy","Taxonomy",0],["A group of similar cells forms a...?","Tissue","Organ","Organism","Population",0],["The control centre of a cell?","Nucleus","Cell wall","Cytoplasm","Vacuole",0],["Plant cell wall is mainly made of?","Cellulose","Starch","Protein","Fat",0],["Organisms that make their own food?","Producers","Consumers","Decomposers","Parasites",0],["Organisms that break down dead matter?","Decomposers","Producers","Predators","Herbivores",0],["Animals that eat only plants?","Herbivores","Carnivores","Omnivores","Scavengers",0],["Animals that eat both plants and animals?","Omnivores","Herbivores","Carnivores","Producers",0],["A relationship where both organisms benefit?","Mutualism","Parasitism","Competition","Predation",0],["The natural home of an organism?","Habitat","Niche","Biome","Population",0],["Transfer of pollen to a stigma?","Pollination","Fertilisation","Germination","Dispersal",0],["Seed development into a seedling?","Germination","Pollination","Respiration","Transpiration",0],["Male reproductive part of a flower?","Stamen","Pistil","Petal","Sepal",0],["Female reproductive part of a flower?","Pistil","Stamen","Anther","Filament",0],["Which part of a plant absorbs water?","Root","Flower","Fruit","Leaf",0],["Which plant tissue transports water?","Xylem","Phloem","Epidermis","Cortex",0],["Which tissue transports sugars in plants?","Phloem","Xylem","Cambium","Cuticle",0],["Animals with a backbone are called?","Vertebrates","Invertebrates","Arthropods","Molluscs",0],["Frog belongs to which vertebrate group?","Amphibians","Reptiles","Birds","Mammals",0],["Whale belongs to which group?","Mammals","Fish","Reptiles","Amphibians",0],["Scientific name for the voice box?","Larynx","Trachea","Pharynx","Bronchus",0],["Where are most nutrients absorbed?","Small intestine","Stomach","Large intestine","Oesophagus",0],["What carries messages in the nervous system?","Neurons","Alveoli","Nephrons","Platelets",0],["The study of living things?","Biology","Geology","Physics","Chemistry",0],["A change in inherited DNA is a...?","Mutation","Adaptation","Digestion","Diffusion",0],["The loss of water vapour from leaves?","Transpiration","Respiration","Photosynthesis","Pollination",0]],"Chemistry":[["Symbol for oxygen?","O","Ox","Og","Om",0],["Symbol for sodium?","Na","So","S","N",0],["Symbol for potassium?","K","P","Pt","Po",0],["Formula for water?","H₂O","CO₂","O₂","H₂",0],["pH below 7 indicates?","Acid","Base","Neutral solution","Salt only",0],["pH of a neutral solution at room temperature?","7","0","1","14",0],["Smallest unit of an element?","Atom","Cell","Molecule","Compound",0],["Negatively charged particle?","Electron","Proton","Neutron","Nucleus",0],["Positively charged particle?","Proton","Electron","Neutron","Photon",0],["Particle with no electric charge?","Neutron","Proton","Electron","Ion",0],["The centre of an atom?","Nucleus","Shell","Bond","Orbit",0],["A substance made of one type of atom?","Element","Mixture","Solution","Compound",0],["Two or more elements chemically joined?","Compound","Mixture","Alloy","Suspension",0],["Separation method for insoluble solid and liquid?","Filtration","Distillation","Evaporation","Chromatography",0],["Separation method using different boiling points?","Distillation","Filtration","Sieving","Decantation",0],["Change from liquid to gas?","Vaporisation","Freezing","Condensation","Melting",0],["Change from gas to liquid?","Condensation","Sublimation","Melting","Boiling",0],["Change from solid to liquid?","Melting","Freezing","Condensation","Deposition",0],["Gas essential for ordinary combustion?","Oxygen","Nitrogen","Carbon dioxide","Argon",0],["Common name for sodium chloride?","Table salt","Baking soda","Limestone","Sugar",0],["Chemical formula of carbon dioxide?","CO₂","CO","C₂O","CaO",0],["Chemical formula of oxygen gas?","O₂","O","H₂O","CO₂",0],["A solution with pH 12 is?","Alkaline","Acidic","Neutral","Always pure water",0],["What is rust mainly hydrated oxide of?","Iron","Copper","Aluminium","Zinc",0],["Which metal is liquid near room temperature?","Mercury","Iron","Copper","Sodium",0],["Which gas makes limewater turn milky?","Carbon dioxide","Oxygen","Hydrogen","Nitrogen",0],["Which gas is commonly used in balloons safely?","Helium","Chlorine","Carbon monoxide","Sulphur dioxide",0],["The periodic table is arranged by increasing?","Atomic number","Mass only","Density","Melting point",0],["Vertical columns in periodic table are?","Groups","Periods","Rows","Series",0],["Horizontal rows in periodic table are?","Periods","Groups","Families","Blocks",0],["A bond formed by sharing electrons?","Covalent bond","Ionic bond","Metallic bond","Hydrogen bond",0],["A bond involving electron transfer?","Ionic bond","Covalent bond","Metallic bond","Peptide bond",0],["What is a catalyst?","Speeds reaction without being used up","Stops every reaction","Always a fuel","A type of solvent",0],["What is oxidation commonly described as?","Loss of electrons","Gain of electrons","Loss of neutrons","Gain of protons",0],["What is reduction commonly described as?","Gain of electrons","Loss of electrons","Gain of neutrons","Loss of protons",0],["What is the formula of methane?","CH₄","C₂H₆","CO₂","NH₃",0],["What is the formula of ammonia?","NH₃","NO₂","N₂O","CH₄",0],["Which is a noble gas?","Neon","Chlorine","Hydrogen","Sodium",0],["What is the main gas in Earth's atmosphere?","Nitrogen","Oxygen","Carbon dioxide","Hydrogen",0],["A mixture of metals is called?","Alloy","Isotope","Polymer","Acid",0]],"Physics":[["SI unit of force?","Newton","Joule","Watt","Pascal",0],["SI unit of energy?","Joule","Newton","Ampere","Volt",0],["SI unit of power?","Watt","Joule","Ohm","Metre",0],["SI unit of electric current?","Ampere","Volt","Watt","Coulomb",0],["SI unit of temperature?","Kelvin","Celsius","Fahrenheit","Joule",0],["Speed is distance divided by?","Time","Mass","Force","Area",0],["Instrument for measuring electric current?","Ammeter","Voltmeter","Thermometer","Barometer",0],["Instrument for measuring voltage?","Voltmeter","Ammeter","Hydrometer","Stopwatch",0],["Unit of resistance?","Ohm","Volt","Ampere","Watt",0],["What is the approximate acceleration due to gravity on Earth?","9.8 m/s²","3.0 m/s²","15 m/s²","1.6 m/s²",0],["Energy of a moving object?","Kinetic energy","Potential energy","Chemical energy","Nuclear energy",0],["Stored energy due to position?","Potential energy","Kinetic energy","Sound energy","Heat only",0],["What does a convex lens do to parallel rays?","Converges them","Always diverges them","Absorbs them","Stops them",0],["Which mirror is used as a vehicle rear-view mirror?","Convex mirror","Plane mirror","Concave mirror","No mirror",0],["Sound cannot travel through?","Vacuum","Water","Air","Steel",0],["Light travels fastest through?","Vacuum","Water","Glass","Diamond",0],["The bouncing back of light is?","Reflection","Refraction","Diffraction","Dispersion",0],["Bending of light between media?","Refraction","Reflection","Friction","Conduction",0],["Heat transfer through direct contact?","Conduction","Convection","Radiation","Evaporation",0],["Heat transfer by movement of fluid?","Convection","Conduction","Radiation","Reflection",0],["Heat from the Sun reaches Earth mainly by?","Radiation","Conduction","Convection","Friction",0],["What is the charge of an electron?","Negative","Positive","Neutral","Variable positive",0],["Like electric charges?","Repel","Attract","Disappear","Become neutral",0],["Unlike electric charges?","Attract","Repel","Always repel","Have no force",0],["A complete path for current is a?","Closed circuit","Open circuit","Insulator","Magnet",0],["Material that allows current to flow easily?","Conductor","Insulator","Resistor only","Ceramic",0],["Which is a good electrical insulator?","Rubber","Copper","Aluminium","Iron",0],["A device that converts electrical energy to light?","Lamp","Generator","Motor","Battery",0],["A device that converts electrical energy to motion?","Electric motor","Bulb","Fuse","Switch",0],["What does a fuse protect against?","Excessive current","Low sound","High humidity","Low light",0],["The force opposing motion between surfaces?","Friction","Gravity","Upthrust","Magnetism",0],["The force pulling objects toward Earth?","Gravity","Friction","Tension","Upthrust",0],["Momentum equals mass multiplied by?","Velocity","Acceleration","Time","Distance",0],["Pressure equals force divided by?","Area","Volume","Speed","Mass",0],["Density equals mass divided by?","Volume","Area","Time","Force",0],["A simple machine with a fulcrum is a?","Lever","Pulley","Screw","Wedge",0],["Frequency is measured in?","Hertz","Metres","Seconds","Newtons",0],["The time for one complete oscillation is?","Period","Frequency","Amplitude","Wavelength",0],["What is the unit of wavelength?","Metre","Hertz","Second","Watt",0],["Which wave needs a medium to travel?","Sound wave","Radio wave","Light wave","X-ray",0]],"Geography":[["Largest continent by area?","Asia","Africa","Europe","Australia",0],["Smallest continent by area?","Australia","Europe","Antarctica","South America",0],["Longest river in Africa?","Nile","Niger","Congo","Zambezi",0],["Highest mountain above sea level?","Mount Everest","Kilimanjaro","K2","Mount Kenya",0],["Capital of Nigeria?","Abuja","Kaduna","Lagos","Jos",0],["Capital of Kenya?","Nairobi","Mombasa","Kampala","Kigali",0],["Capital of Senegal?","Dakar","Bamako","Accra","Conakry",0],["Capital of Japan?","Tokyo","Kyoto","Osaka","Seoul",0],["Which ocean lies west of Africa?","Atlantic Ocean","Pacific Ocean","Indian Ocean","Arctic Ocean",0],["Which ocean lies east of Africa?","Indian Ocean","Atlantic Ocean","Arctic Ocean","Southern Ocean",0],["The Equator divides Earth into?","Northern and Southern Hemispheres","Eastern and Western Hemispheres","Land and sea","Tropics only",0],["The Prime Meridian passes through?","Greenwich","Cairo","Nairobi","New York",0],["Lines running east-west are called?","Latitudes","Longitudes","Meridians","Contours",0],["Lines running from pole to pole are?","Longitudes","Latitudes","Equators","Isobars",0],["A map scale shows?","Relationship between map and ground distances","Population","Rainfall only","Direction of wind",0],["A compass needle points approximately toward?","North","South","East","West",0],["A very dry region is a?","Desert","Delta","Rainforest","Wetland",0],["A river mouth deposit may form a?","Delta","Plateau","Valley","Cliff",0],["A broad elevated flat area is a?","Plateau","Plain","Basin","Dune",0],["A low area between hills or mountains?","Valley","Ridge","Peak","Cape",0],["The seasonal reversal of winds in South Asia is called?","Monsoon","Trade wind","Breeze","Harmattan",0],["The hot, dry wind in West Africa is known as?","Harmattan","Monsoon","Typhoon","Chinook",0],["Which layer of Earth is the outermost solid layer?","Crust","Outer core","Inner core","Mantle",0],["Molten rock beneath Earth's surface is?","Magma","Lava","Ash","Granite",0],["Molten rock on Earth's surface is?","Lava","Magma","Basaltic soil","Moraine",0],["An instrument for measuring rainfall?","Rain gauge","Barometer","Anemometer","Thermometer",0],["An instrument for measuring wind speed?","Anemometer","Hygrometer","Rain gauge","Compass",0],["An instrument for measuring air pressure?","Barometer","Thermometer","Ammeter","Seismograph",0],["The study of maps is?","Cartography","Climatology","Geology","Demography",0],["The study of population is?","Demography","Cartography","Hydrology","Astronomy",0],["A place where a river begins?","Source","Mouth","Delta","Tributary",0],["A smaller river joining a larger one?","Tributary","Estuary","Canal","Waterfall",0],["A narrow strip of land joining two larger land areas?","Isthmus","Peninsula","Island","Archipelago",0],["Land surrounded by water on three sides?","Peninsula","Island","Isthmus","Atoll",0],["A group of islands is an?","Archipelago","Isthmus","Oasis","Peninsula",0],["The imaginary line at 0° latitude?","Equator","Prime Meridian","Tropic of Cancer","Arctic Circle",0],["Which Nigerian river gives its name to the country?","Niger","Benue","Kaduna","Cross",0],["The confluence of Niger and Benue is near?","Lokoja","Kano","Maiduguri","Sokoto",0],["Which Nigerian state is famous for the Yankari Game Reserve?","Bauchi","Lagos","Delta","Ekiti",0],["The largest hot desert in the world?","Sahara","Gobi","Kalahari","Atacama",0]],"History":[["Nigeria gained independence in which year?","1960","1957","1963","1970",0],["Nigeria became a republic in which year?","1963","1960","1979","1999",0],["Who was Nigeria's first Prime Minister?","Abubakar Tafawa Balewa","Nnamdi Azikiwe","Ahmadu Bello","Obafemi Awolowo",0],["Who was Nigeria's first President?","Nnamdi Azikiwe","Tafawa Balewa","Yakubu Gowon","Murtala Mohammed",0],["Which ancient civilisation built the pyramids at Giza?","Ancient Egyptians","Romans","Vikings","Mongols",0],["The ancient city of Rome was in modern?","Italy","Greece","Egypt","Turkey",0],["The Great Wall is associated with which country?","China","India","Japan","Iran",0],["The transatlantic slave trade forcibly transported many Africans to?","The Americas","Antarctica","Australia only","Central Asia",0],["Who led India's non-violent independence movement?","Mahatma Gandhi","Nelson Mandela","Winston Churchill","Jomo Kenyatta",0],["Nelson Mandela became president of South Africa in?","1994","1980","2000","1963",0],["The First World War began in?","1914","1918","1939","1945",0],["The Second World War ended in?","1945","1939","1918","1950",0],["The United Nations was founded in?","1945","1919","1960","1930",0],["The Berlin Wall fell in?","1989","1979","1991","1961",0],["The French Revolution began in?","1789","1776","1815","1848",0],["The American Declaration of Independence was adopted in?","1776","1789","1865","1492",0],["Which empire had its capital at Constantinople?","Byzantine Empire","Mali Empire","Songhai Empire","Roman Republic",0],["Mansa Musa ruled which West African empire?","Mali Empire","Ghana Empire","Benin Empire","Oyo Empire",0],["The ancient city of Timbuktu is in modern?","Mali","Nigeria","Ghana","Niger",0],["The Nok culture is especially known for?","Terracotta sculptures","Pyramids","Paper money","Silk weaving",0],["The Benin Bronzes are associated with which historic kingdom?","Benin Kingdom","Zulu Kingdom","Mali Empire","Ashanti Empire",0],["The Oyo Empire was prominent in which region?","South-western Nigeria","North-eastern Nigeria","Coastal Kenya","Southern Egypt",0],["The Sokoto Caliphate was founded by?","Usman dan Fodio","Mansa Musa","Jaja of Opobo","Samori Ture",0],["The 1914 amalgamation joined which two administrations?","Northern and Southern Nigeria","Nigeria and Ghana","Lagos and Cameroon","East and West Africa",0],["Who was the British colonial governor associated with the 1914 amalgamation?","Frederick Lugard","George Goldie","Hugh Clifford","Arthur Richards",0],["The Nigerian Civil War took place from?","1967 to 1970","1960 to 1963","1975 to 1979","1983 to 1985",0],["The African Union replaced the OAU in?","2002","1963","1990","2010",0],["The OAU was founded in?","1963","1945","1975","1999",0],["Who was the first human to walk on the Moon?","Neil Armstrong","Yuri Gagarin","Buzz Aldrin","John Glenn",0],["The first successful powered aeroplane flight was by?","Wright brothers","Montgolfier brothers","Lumière brothers","Curie sisters",0],["The printing press in Europe is associated with?","Johannes Gutenberg","Isaac Newton","Galileo Galilei","Leonardo da Vinci",0],["The Renaissance began in?","Italy","Norway","China","Mexico",0],["The ancient Olympic Games began in?","Greece","Rome","Egypt","Persia",0],["The Magna Carta was signed in?","1215","1066","1492","1776",0],["The Spanish Armada was defeated in?","1588","1492","1603","1707",0],["The Cold War was mainly between the USA and?","Soviet Union","France","Japan","Brazil",0],["Who was the first Secretary-General of the United Nations?","Trygve Lie","Kofi Annan","Boutros Boutros-Ghali","U Thant",0],["Kofi Annan was from which country?","Ghana","Nigeria","Kenya","Senegal",0],["Which Nigerian leader introduced the Structural Adjustment Programme in 1986?","Ibrahim Babangida","Yakubu Gowon","Olusegun Obasanjo","Goodluck Jonathan",0],["Nigeria returned to civilian rule in 1999 under which elected president?","Olusegun Obasanjo","Umaru Yar'Adua","Shehu Shagari","Muhammadu Buhari",0]],"Computer Studies":[["What does CPU stand for?","Central Processing Unit","Computer Personal Unit","Central Program Utility","Control Processing User",0],["Which device is used to type text?","Keyboard","Monitor","Speaker","Printer",0],["Which device displays visual output?","Monitor","Mouse","Scanner","Microphone",0],["Which device moves the pointer?","Mouse","Printer","Speaker","Projector",0],["What is the main circuit board called?","Motherboard","Hard drive","Keyboard","Modem",0],["Which is an example of an operating system?","Linux","HTML","USB","JPEG",0],["What does RAM stand for?","Random Access Memory","Read All Memory","Rapid Action Machine","Run Access Module",0],["Which memory is usually non-volatile?","ROM","RAM","Cache","Registers",0],["What does URL stand for?","Uniform Resource Locator","Universal Reading Link","United Resource Line","User Reference Location",0],["Which program is commonly used to browse websites?","Web browser","Spreadsheet","Compiler","Calculator",0],["Which is a search engine?","Google","Windows","Bluetooth","PowerPoint",0],["What does WWW stand for?","World Wide Web","World Wide Window","Web Word Work","Wide World Wire",0],["Which file extension commonly identifies a PDF?"," .pdf",".mp3",".jpg",".exe",0],["Which is an example of spreadsheet software?","Microsoft Excel","Paint","Notepad","VLC",0],["Which software is used to create presentations?","PowerPoint","Access","Calculator","File Explorer",0],["Which device produces a paper copy?","Printer","Scanner","Webcam","Router",0],["Which device converts paper documents to digital images?","Scanner","Printer","Speaker","Joystick",0],["What is malware?","Harmful software","A computer screen","A storage cable","A typeface",0],["A strong password should be?","Long and hard to guess","Your first name only","123456","Shared publicly",0],["What is phishing?","A deceptive attempt to steal information","A way to cool a computer","A file format","A printing method",0],["What does Wi-Fi provide?","Wireless network connection","Wired electricity","Extra screen brightness","File compression",0],["What does USB stand for?","Universal Serial Bus","United System Board","User Storage Box","Universal Screen Base",0],["Which unit is commonly used for file size?","Byte","Metre","Litre","Watt",0],["How many bits are in a byte?","8","4","16","32",0],["Which number system uses only 0 and 1?","Binary","Decimal","Octal","Hexadecimal",0],["What is the decimal value of binary 10?","2","10","1","4",0],["Which is an input device?","Microphone","Monitor","Printer","Speaker",0],["Which is an output device?","Speaker","Keyboard","Mouse","Scanner",0],["What is cloud storage?","Saving files on remote internet servers","Saving only on paper","A computer fan","A screen setting",0],["What is a backup?","An extra copy of data","A deleted file","A computer virus","A screen saver",0],["Which key commonly deletes characters to the left?","Backspace","Shift","Caps Lock","Tab",0],["Which shortcut commonly copies selected text?","Ctrl + C","Ctrl + V","Ctrl + X","Ctrl + Z",0],["Which shortcut commonly pastes copied text?","Ctrl + V","Ctrl + C","Ctrl + P","Ctrl + A",0],["Which shortcut commonly saves a document?","Ctrl + S","Ctrl + D","Ctrl + F","Ctrl + E",0],["What is an algorithm?","A step-by-step procedure","A computer screen","A storage device","A network cable",0],["What does HTML mainly describe?","Structure of web pages","Computer hardware","Internet speed","Image editing",0],["What does CSS control on a web page?","Presentation and styling","Power supply","Database backups","Network routing",0],["What is JavaScript commonly used for on websites?","Interactive behaviour","Printing paper","Charging batteries","Replacing the operating system",0],["What is a database?","An organised collection of data","A type of monitor","A computer virus","A keyboard layout",0],["What is an email attachment?","A file sent with an email","The email subject","A password hint","A browser tab",0]],"Civic Education":[["What is citizenship?","Membership of a country with rights and duties","Owning a business","Holding a driving licence","Living in any hotel",0],["Which document contains the fundamental laws of a country?","Constitution","Newspaper","Diary","School timetable",0],["What is democracy?","Government chosen by the people","Rule by one unelected person","Rule by the military","Government without laws",0],["What is the rule of law?","Everyone is subject to the law","Only citizens obey laws","Leaders are above the law","Courts make no decisions",0],["Which arm of government makes laws?","Legislature","Executive","Judiciary","Civil service",0],["Which arm implements laws and policies?","Executive","Legislature","Judiciary","Electoral commission",0],["Which arm interprets laws?","Judiciary","Executive","Legislature","Police",0],["What is the main role of an election?","Choose representatives or leaders","Collect school fees","Make weather forecasts","Issue passports only",0],["What is a secret ballot?","A vote cast privately","A public speech","A court hearing","A campaign poster",0],["What is the minimum civic duty of obeying laws called?","Law-abiding conduct","Vandalism","Bribery","Discrimination",0],["Which is a civic responsibility?","Paying lawful taxes","Destroying public property","Buying votes","Spreading false rumours",0],["What is corruption?","Abuse of entrusted power for private gain","Volunteering freely","Following public rules","Voting peacefully",0],["What is bribery?","Offering or receiving an improper reward","Paying an official fee","Giving a lawful gift to family","Donating to charity",0],["What is tolerance?","Respecting differences","Forcing everyone to agree","Rejecting other groups","Avoiding all discussion",0],["What is national unity?","A sense of shared belonging","Refusing cooperation","Separating communities","Ignoring common goals",0],["Which is Nigeria's national motto?","Unity and Faith, Peace and Progress","Peace and Plenty","Work and Win","Freedom and Justice",0],["What are fundamental human rights?","Basic freedoms and protections","Privileges for officials only","Rules for sports","Business contracts",0],["Which institution settles many legal disputes?","Courts","Markets","Banks","Museums",0],["What is freedom of expression?","Right to express opinions within the law","Right to threaten others","Right to ignore every law","Right to publish private passwords",0],["What is a pressure group?","An organised group seeking to influence policy","A group that runs every court","A private family","A sports referee team",0],["What is public property?","Property owned for community or government use","A person's private notebook","A family heirloom","A shop owner's stock",0],["Why should public property be protected?","It serves the community","It belongs to nobody","It has no value","It should be wasted",0],["What is voter registration for?","Establishing eligibility to vote","Applying for a library book","Opening a bank account","Joining a sports club",0],["What is a manifesto?","A statement of a candidate's plans and policies","A court sentence","A tax receipt","A national anthem",0],["What is lobbying?","Trying to influence public decisions","Counting rainfall","Repairing roads","Issuing currency",0],["What is a peaceful way to resolve conflict?","Dialogue and mediation","Threats","Vandalism","Violence",0],["What does equality before the law mean?","The law applies fairly to everyone","Only wealthy people have rights","Officials cannot be prosecuted","Laws apply only at night",0],["What is accountability?","Being answerable for actions and decisions","Hiding public records","Avoiding responsibility","Ignoring complaints",0],["What is transparency in governance?","Openness about decisions and actions","Keeping all spending secret","Refusing public questions","Destroying records",0],["Which body conducts federal elections in Nigeria?","INEC","NCDC","NEMA","NIMC",0],["What does INEC stand for?","Independent National Electoral Commission","International Nigerian Education Council","Internal National Executive Committee","Independent National Energy Corporation",0],["What is the Nigerian national flag's main colours?","Green and white","Blue and white","Red and yellow","Black and green",0],["What does the green on Nigeria's flag commonly represent?","Agriculture and natural wealth","The sea","Snow","Desert sand",0],["What is a national anthem?","A country's official patriotic song","A court document","A tax law","A school report",0],["What is patriotism?","Love and commitment to one's country","Hatred of all other countries","Refusal to obey laws","Avoiding community service",0],["What is community service?","Voluntary work that benefits the community","A private holiday","A court fine","A business loan",0],["What is child labour?","Work that harms or exploits children or interferes with schooling","Age-appropriate chores with care","School sports","Reading at home",0],["What is human trafficking?","Exploitation of people through force, fraud or coercion","Ordinary travel","Legal job training","Student exchange",0],["What is a peaceful protest?","A lawful public expression of views","Destroying property","Threatening voters","Blocking emergency care",0],["Why is a constitution important?","It sets out government powers and citizens' rights","It lists daily weather","It replaces every school rule","It determines sports scores",0]]};
+let currentSubject = '', activeQuestions = [], subjectIndex = 0, subjectScore = 0, subjectAnswered = false, quizMode = 'subject';
+function shuffleList(list){const a=[...list];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function renderSubjectChoices(){
+ const grid=document.getElementById('subjectGrid'); if(!grid)return;
+ grid.innerHTML='';
+ const names=Object.keys(subjectBanks);
+ names.forEach(name=>{
+  const b=document.createElement('button');b.type='button';b.className='subject-choice';
+  b.setAttribute('aria-label',name+' — 40 questions');
+  b.innerHTML='<span>'+name+'</span><small>40 QUESTIONS · START →</small>';
+  b.addEventListener('click',()=>startSubjectQuiz(name));grid.appendChild(b);
+ });
+ if(!names.length)grid.innerHTML='<p style="color:#fff">Subjects are loading. Please refresh the page.</p>';
+}
+function startSubjectQuiz(name){
+ quizMode='subject';currentSubject=name;activeQuestions=shuffleList(subjectBanks[name]).map(q=>{
+  const opts=shuffleList(q.slice(1,5).map((v,i)=>({v,correct:i===q[5]})));
+  return {q:q[0],a:opts.map(x=>x.v),c:opts.findIndex(x=>x.correct)};
+ });
+ subjectIndex=0;subjectScore=0;subjectAnswered=false;
+ document.getElementById('subjectPicker').classList.add('hidden');
+ document.getElementById('subjectQuiz').classList.remove('hidden');
+ document.getElementById('quizSubjectName').textContent=name;
+ document.getElementById('retryQuizBtn').classList.add('hidden');
+ renderSubjectQuestion();
+}
+function renderSubjectQuestion(){
+ const certBox=document.getElementById('certificateAction');if(certBox)certBox.classList.add('hidden');
+ const q=activeQuestions[subjectIndex];subjectAnswered=false;
+ document.getElementById('quizProgress').textContent=`QUESTION ${subjectIndex+1} OF ${activeQuestions.length}`;
+ document.getElementById('quizScore').textContent='SCORE: '+subjectScore;
+ document.getElementById('quizBar').style.width=(subjectIndex/activeQuestions.length*100)+'%';
+ document.getElementById('quizQuestion').textContent=q.q;
+ const area=document.getElementById('quizAnswers');area.innerHTML='';
+ q.a.forEach((answer,i)=>{
+  const b=document.createElement('button');b.type='button';b.className='quiz-answer';
+  b.textContent=String.fromCharCode(65+i)+'. '+answer;b.addEventListener('click',()=>answerSubjectQuestion(i));area.appendChild(b);
+ });
+ document.getElementById('quizFeedback').classList.add('hidden');
+ document.getElementById('nextQuizBtn').classList.add('hidden');
+}
+function answerSubjectQuestion(choice){
+ if(subjectAnswered)return;subjectAnswered=true;
+ const q=activeQuestions[subjectIndex],buttons=[...document.getElementById('quizAnswers').children];
+ buttons.forEach((b,i)=>{b.disabled=true;if(i===q.c)b.classList.add('correct');});
+ const feedback=document.getElementById('quizFeedback');
+ if(choice===q.c){subjectScore++;feedback.textContent='Correct! Well done.';}
+ else{buttons[choice].classList.add('wrong');feedback.textContent='Not quite. Correct answer: '+q.a[q.c]+'.';}
+ document.getElementById('quizScore').textContent='SCORE: '+subjectScore;
+ feedback.classList.remove('hidden');
+ if(subjectIndex<activeQuestions.length-1)document.getElementById('nextQuizBtn').classList.remove('hidden');
+ else finishSubjectQuiz();
+}
+function nextSubjectQuestion(){if(subjectIndex<activeQuestions.length-1){subjectIndex++;renderSubjectQuestion();}}
+function finishSubjectQuiz(){
+ saveQuizResult(currentSubject,subjectScore,activeQuestions.length,quizMode);
+ document.getElementById('quizProgress').textContent='COMPLETED';
+ document.getElementById('quizBar').style.width='100%';
+ document.getElementById('quizQuestion').textContent='🎉 Subject completed!';
+ document.getElementById('quizAnswers').innerHTML='';
+ const pct=Math.round(subjectScore/activeQuestions.length*100);
+ const feedback=document.getElementById('quizFeedback');
+ feedback.textContent=`Your result: ${subjectScore} out of ${activeQuestions.length} (${pct}%). `+(pct>=80?'Excellent work!':pct>=50?'Good effort. Keep practising!':'Keep learning and try again—you can improve!');
+ feedback.classList.remove('hidden');
+ const certBox=document.getElementById('certificateAction');
+ if(pct>=80){certBox.classList.remove('hidden');window.nshLastCertificate={name:getPlayerName()||'Guest',subject:currentSubject,score:subjectScore,total:activeQuestions.length,pct,date:new Date().toLocaleDateString(),id:'NSH-'+Date.now().toString(36).toUpperCase()+'-'+Math.random().toString(36).slice(2,7).toUpperCase()};}else{certBox.classList.add('hidden');window.nshLastCertificate=null;}
+ document.getElementById('retryQuizBtn').classList.remove('hidden');
+}
+function backToSubjects(){
+ document.getElementById('subjectQuiz').classList.add('hidden');
+ document.getElementById('subjectPicker').classList.remove('hidden');
+}
+// Timed practice examination
+let nshExamQuestions=[],nshExamAnswers=[],nshExamIndex=0,nshExamSeconds=1800,nshExamTimer=null,nshExamSubject='';
+function nshInitExam(){const select=document.getElementById('examSubject');if(!select||select.options.length)return;Object.keys(subjectBanks).forEach(name=>{const o=document.createElement('option');o.value=name;o.textContent=name;select.appendChild(o);});}
+function nshStartExam(){nshInitExam();nshExamSubject=document.getElementById('examSubject').value;const bank=subjectBanks[nshExamSubject]||[];nshExamQuestions=shuffleList(bank).slice(0,40).map(q=>{const opts=shuffleList(q.slice(1,5).map((v,i)=>({v,correct:i===q[5]})));return {q:q[0],a:opts.map(x=>x.v),c:opts.findIndex(x=>x.correct)};});nshExamAnswers=Array(nshExamQuestions.length).fill(null);nshExamIndex=0;nshExamSeconds=1800;document.getElementById('examSetup').classList.add('hidden');document.getElementById('examResult').classList.add('hidden');document.getElementById('examRun').classList.remove('hidden');document.getElementById('examSubjectTitle').textContent=nshExamSubject+' Examination';nshRenderExamQuestion();nshUpdateExamClock();clearInterval(nshExamTimer);nshExamTimer=setInterval(()=>{nshExamSeconds--;nshUpdateExamClock();if(nshExamSeconds<=0)nshSubmitExam(true);},1000);}
+function nshUpdateExamClock(){const el=document.getElementById('examClock');if(!el)return;const m=Math.floor(nshExamSeconds/60),sec=nshExamSeconds%60;el.textContent=String(m).padStart(2,'0')+':'+String(sec).padStart(2,'0');el.style.color=nshExamSeconds<=300?'#ff7373':'';}
+function nshRenderExamQuestion(){const q=nshExamQuestions[nshExamIndex];if(!q)return;document.getElementById('examQuestionCount').textContent=`QUESTION ${nshExamIndex+1} OF ${nshExamQuestions.length}`;document.getElementById('examQuestionText').textContent=q.q;document.getElementById('examProgressBar').style.width=((nshExamIndex+1)/nshExamQuestions.length*100)+'%';const area=document.getElementById('examOptions');area.innerHTML='';q.a.forEach((a,i)=>{const b=document.createElement('button');b.type='button';b.className='quiz-answer';b.textContent=String.fromCharCode(65+i)+'. '+a;if(nshExamAnswers[nshExamIndex]===i)b.classList.add('correct');b.setAttribute('aria-pressed',nshExamAnswers[nshExamIndex]===i?'true':'false');b.onclick=()=>{nshExamAnswers[nshExamIndex]=i;nshRenderExamQuestion();};area.appendChild(b);});document.getElementById('examPrev').disabled=nshExamIndex===0;document.getElementById('examNext').textContent=nshExamIndex===nshExamQuestions.length-1?'Review answers':'Next →';document.getElementById('examAnsweredCount').textContent=nshExamAnswers.filter(x=>x!==null).length+' of '+nshExamQuestions.length+' questions answered.';}
+function nshExamMove(step){if(step===1&&nshExamIndex===nshExamQuestions.length-1){document.getElementById('examAnsweredCount').textContent='You are at the final question. Submit when ready.';return;}nshExamIndex=Math.max(0,Math.min(nshExamQuestions.length-1,nshExamIndex+step));nshRenderExamQuestion();}
+function nshSubmitExam(auto){if(!nshExamQuestions.length||document.getElementById('examRun').classList.contains('hidden'))return;if(!auto&&!confirm('Submit your examination now? You cannot change answers afterward.'))return;clearInterval(nshExamTimer);const score=nshExamQuestions.reduce((n,q,i)=>n+(nshExamAnswers[i]===q.c?1:0),0),total=nshExamQuestions.length,pct=Math.round(score/total*100);document.getElementById('examRun').classList.add('hidden');document.getElementById('examResult').classList.remove('hidden');document.getElementById('examResultTitle').textContent=auto?'Time is up — examination submitted':'Examination submitted';document.getElementById('examMark').textContent=score+'/'+total;document.getElementById('examPercent').textContent=pct+'%';document.getElementById('examGrade').textContent=pct>=80?'Excellent':pct>=60?'Good':pct>=50?'Pass':'Keep practising';document.getElementById('examResultMessage').textContent=`You scored ${score} out of ${total}. ${auto?'Your answers were submitted automatically when time expired.':'Your answers have been marked.'}`;const review=document.getElementById('examReview');review.innerHTML='';nshExamQuestions.forEach((q,i)=>{const box=document.createElement('div');box.className='panel';box.style.margin='10px 0';const title=document.createElement('strong');title.textContent=(i+1)+'. '+q.q;const yours=document.createElement('p');yours.textContent='Your answer: '+(nshExamAnswers[i]===null?'Not answered':q.a[nshExamAnswers[i]]);const correct=document.createElement('p');correct.textContent='Correct answer: '+q.a[q.c];correct.style.color=nshExamAnswers[i]===q.c?'#28c78b':'#ff8585';box.append(title,yours,correct);review.appendChild(box);});if(typeof saveQuizResult==='function')saveQuizResult(nshExamSubject,score,total,'timed-exam');}
+function nshResetExam(){clearInterval(nshExamTimer);document.getElementById('examResult').classList.add('hidden');document.getElementById('examRun').classList.add('hidden');document.getElementById('examSetup').classList.remove('hidden');}
+
+renderSubjectChoices();
+</script>
+
+
+<section id="account" class="section hidden">
+ <div class="sectionhead"><div><h2>👤 Student Account</h2><p>Sign in to keep your learning profile across devices.</p></div></div>
+ <div class="panel">
+  <div id="accountSignedOut">
+   <div class="notice">Please ask a parent or guardian to oversee account setup. Use a nickname, not your full name, and never share your password.</div>
+   <label class="label" for="accountName">Display nickname</label>
+   <input class="field" id="accountName" maxlength="20" autocomplete="nickname" placeholder="Example: SmartLearner">
+   <label class="label" for="accountEmail">Email address</label>
+   <input class="field" id="accountEmail" type="email" autocomplete="email" placeholder="Email address">
+   <label class="label" for="accountPassword">Password (at least 6 characters)</label>
+   <input class="field" id="accountPassword" type="password" minlength="6" autocomplete="new-password" placeholder="Create or enter password">
+   <div class="btnrow"><button class="btn primary" onclick="registerStudent()">Create account</button><button class="btn secondary" onclick="loginStudent()">Log in</button></div>
+   <p id="accountMessage" class="result" aria-live="polite">Create an account or log in. You can also continue using the site without an account.</p>
+  </div>
+  <div id="accountSignedIn" class="hidden">
+   <h3>Welcome, <span id="accountWelcome">Student</span>! 🎉</h3>
+   <p>Your account is connected. Your quiz activity can use this account on this device.</p>
+   <div class="panel" style="margin:14px 0;background:linear-gradient(135deg,#172c55,#263d70)">
+    <h3>🎁 My Rewards & Points</h3>
+    <div class="stats"><div class="stat"><b id="rewardPoints">0</b><span>Available points</span></div><div class="stat"><b id="rewardLevel">Starter</b><span>Current level</span></div><div class="stat"><b id="rewardQuizzes">0</b><span>Quizzes completed</span></div></div>
+    <p id="rewardNext" class="notice">Earn points by completing quizzes and answering correctly.</p>
+    <h4>🏅 Achievement badges</h4><div id="rewardBadges" class="btnrow"><span class="pill">🌱 First Steps · Complete a quiz</span></div>
+   </div>
+   <div class="panel" style="margin:14px 0;background:linear-gradient(135deg,#123c48,#176b62)">
+    <h3>📅 Daily Attendance & Login Streak</h3>
+    <div class="stats"><div class="stat"><b id="attendanceStreak">0</b><span>Current streak</span></div><div class="stat"><b id="attendanceDays">0</b><span>Days attended</span></div><div class="stat"><b id="attendanceStatus">—</b><span>Today's check-in</span></div></div>
+    <p id="attendanceMessage" class="notice">Sign in each day to build your learning streak.</p>
+    <p class="small">Your daily check-in is recorded once per calendar day. A missed day resets the current streak; your total attendance is kept.</p>
+   </div>
+   <div class="btnrow" style="margin-top:12px"><button id="adminOpenBtn" class="btn primary hidden" onclick="go('admin')">🔐 Open Admin Dashboard</button><button class="btn secondary" onclick="logoutStudent()">Log out</button></div>
+  </div>
+ </div>
+</section>
+
+
+<section id="admin" class="section hidden">
+ <div class="sectionhead"><div><h2>🔐 Admin Dashboard</h2><p>Private learning-platform overview.</p></div></div>
+ <div class="panel">
+  <div id="adminStatus" class="notice">Checking administrator access…</div>
+  <div id="adminContent" class="hidden">
+   <div class="stats" style="margin:14px 0">
+    <div class="stat"><b id="adminStudentCount">—</b><span>Registered profiles</span></div>
+    <div class="stat"><b id="adminScoreCount">—</b><span>Quiz submissions</span></div>
+    <div class="stat"><b id="adminAverage">—</b><span>Average score</span></div>
+   </div>
+   <h3 style="margin-top:20px">📁 Reports & Export Centre</h3>
+   <p style="color:var(--muted)">Download reports based on saved student profiles and quiz submissions. Reports use nicknames only; email addresses and passwords are never included.</p>
+   <div class="btnrow" style="margin:10px 0 18px">
+    <button class="btn primary" onclick="exportAdminCSV('scores')">⬇️ Download quiz results (CSV)</button>
+    <button class="btn secondary" onclick="exportAdminCSV('students')">⬇️ Download student summary (CSV)</button>
+    <button class="btn secondary" onclick="printAdminReport()">🖨️ Print / Save report as PDF</button>
+   </div>
+   <div id="adminExportStatus" class="notice" aria-live="polite">Reports become available after dashboard data loads.</div>
+   <h3 style="margin-top:22px">🏅 Certificate Generation Centre</h3>
+   <p style="color:var(--muted)">Students who score at least 80% on a completed quiz can print a Certificate of Achievement. The certificate shows their nickname, subject, score, date and a unique reference ID.</p>
+   <div class="btnrow" style="margin:10px 0"><button class="btn secondary" onclick="exportCertificateRegister()">⬇️ Export eligible achievements (CSV)</button></div>
+   <div id="certificateAdminStatus" class="notice" aria-live="polite">The certificate threshold is 80%. Certificates recognize quiz achievement and are not formal academic qualifications.</div>
+   <h3 style="margin-top:24px">🔔 Publish Student Announcement</h3>
+   <p style="color:var(--muted)">Post learning updates, quiz news and competition announcements for students.</p>
+   <label class="label" for="announcementTitle">Announcement title</label>
+   <input id="announcementTitle" class="field" maxlength="90" placeholder="e.g. New weekly quiz is available">
+   <label class="label" for="announcementMessage">Message</label>
+   <textarea id="announcementMessage" class="field" maxlength="600" rows="4" placeholder="Write a clear announcement for students…"></textarea>
+   <div class="btnrow"><button class="btn primary" onclick="publishStudentAnnouncement()">📣 Publish announcement</button><button class="btn secondary" onclick="loadStudentNotifications()">↻ Refresh list</button></div>
+   <div id="announcementAdminStatus" class="notice" aria-live="polite">Only authorized administrators can publish announcements.</div>
+   <h3 style="margin-top:20px">👥 Student Management</h3>
+   <p style="color:var(--muted)">View registered student nicknames and learning progress.</p>
+   <input id="adminStudentSearch" type="search" placeholder="Search student nickname…" oninput="filterAdminStudents()" style="width:100%;margin:8px 0 12px;padding:13px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text)">
+   <div id="adminStudentList"><p>Loading students…</p></div>
+   <h3 style="margin-top:20px">🏆 Top quiz results</h3><div id="adminTopScores"><p>Loading results…</p></div>
+   <h3 style="margin-top:20px">🕒 Recent learning activity</h3><div id="adminRecentScores"><p>Loading activity…</p></div>
+   <h3 style="margin-top:24px">📊 Advanced Analytics</h3>
+   <p style="color:var(--muted)">Live summaries calculated from saved quiz submissions.</p>
+   <div class="stats" style="margin:12px 0">
+    <div class="stat"><b id="analyticsToday">0</b><span>Today</span></div>
+    <div class="stat"><b id="analyticsWeek">0</b><span>Last 7 days</span></div>
+    <div class="stat"><b id="analyticsMonth">0</b><span>Last 30 days</span></div>
+   </div>
+   <h4 style="margin:18px 0 8px">📚 Subject participation</h4>
+   <div id="analyticsSubjects"><p>No quiz data yet.</p></div>
+   <h4 style="margin:18px 0 8px">🎯 Average score by subject</h4>
+   <div id="analyticsAverages"><p>No quiz data yet.</p></div>
+   <h4 style="margin:18px 0 8px">📅 Daily activity — last 7 days</h4>
+   <div id="analyticsDaily"><p>No dated quiz activity yet.</p></div>
+   <p class="notice">Analytics use recorded quiz submissions and timestamps. Older submissions without dates may be excluded from time-based charts.</p>
+   <p class="notice">This dashboard shows student nicknames and quiz progress only. It does not display email addresses or passwords. Student accounts cannot be edited or deleted here.</p>
+   <button class="btn secondary" onclick="loadAdminDashboard()">↻ Refresh dashboard</button>
+  </div>
+ </div>
+</section>
+
+<section id="leaderboard" class="section">
+ <div class="sectionhead"><div><h2>🏆 Daily Competition & Leaderboard</h2><p>Save your quiz scores and track your progress.</p></div></div>
+ <div class="panel">
+  <h3>👤 Your player name</h3>
+  <label class="label" for="playerName">Choose a display name (no private details)</label>
+  <input class="field" id="playerName" maxlength="18" placeholder="e.g. SmartLearner" autocomplete="nickname">
+  <div class="btnrow"><button class="btn primary" onclick="savePlayerName()">Save name</button><button class="btn secondary" onclick="startDailyChallenge()">Play daily challenge</button></div>
+  <div class="result" style="margin-top:14px">Daily challenge: 10 questions. Complete it to add your result to the leaderboard.</div>
+ </div>
+ <div class="panel" style="margin-top:12px">
+  <div class="sectionhead"><div><h3 style="margin:0">🥇 Global Top Scores</h3><p>Players competing across devices.</p></div><button class="pill" onclick="renderLeaderboard()">Refresh</button></div>
+  <div id="leaderboardStatus" class="notice" aria-live="polite">Connecting to the global leaderboard…</div>
+  <div id="leaderboardList" aria-live="polite"></div>
+ </div>
+ <div class="panel" style="margin-top:12px">
+  <div class="sectionhead"><div><h3 style="margin:0">🏅 Student Ranking & Competition Centre</h3><p>Weekly and monthly rankings from recorded quiz results.</p></div></div>
+  <div class="btnrow"><button class="pill active" id="rankWeekBtn" onclick="loadCompetitionRankings('week')">This week</button><button class="pill" id="rankMonthBtn" onclick="loadCompetitionRankings('month')">This month</button></div>
+  <div class="stats" style="margin-top:12px"><div class="stat"><b id="competitionPlayers">0</b><span>Players</span></div><div class="stat"><b id="competitionEntries">0</b><span>Quiz entries</span></div><div class="stat"><b id="competitionLeader">—</b><span>Top student</span></div></div>
+  <div id="competitionRankingList" aria-live="polite" class="notice">Loading competition rankings…</div>
+  <p class="small">Rankings use each player's average quiz percentage in the selected period. Quiz count breaks ties. Only display names and scores are shown.</p>
+ </div>
+  
+ </div>
+ <div class="panel" style="margin-top:12px">
+  <div class="sectionhead"><div><h3 style="margin:0">🎁 Student Referral Centre</h3><p>Invite friends to learn and compete on Naija Smart Hub.</p></div></div>
+  <div class="result">Share your personal invite link. When a new student creates an account through it, the invitation is recorded on their profile. Please invite people who may genuinely enjoy learning.</div>
+  <div id="referralStatus" class="notice" aria-live="polite">Sign in to create your personal invite link.</div>
+  <label class="label" for="referralLink">Your invite link</label>
+  <input id="referralLink" class="field" readonly placeholder="Sign in to generate your link">
+  <div class="btnrow"><button class="btn primary" onclick="copyReferralLink()">📋 Copy invite link</button><button class="btn secondary" onclick="shareReferralLink()">↗ Share invite</button></div>
+  <p class="small">Referral invitations are currently for community growth. No cash rewards or guaranteed prizes are offered.</p>
+ </div>
+</section>
+
+<section id="notifications" class="section">
+ <div class="sectionhead"><div><h2>🔔 Student Notification Centre</h2><p>Announcements, competitions and learning updates.</p></div><span class="tiny" id="notificationCount">0 updates</span></div>
+ <div class="panel">
+  <div class="btnrow"><button class="btn primary" onclick="loadStudentNotifications()">↻ Refresh updates</button></div>
+  <div id="studentNotifications" aria-live="polite"><p>Loading announcements…</p></div>
+ </div>
+</section>
+
+<section id="more" class="section hidden">
+ <div class="hero"><span class="eyebrow">YOUR LEARNING SPACE</span><h1>Explore more</h1><p>Open each feature on its own page. Your home screen stays clean and simple.</p></div>
+ <div class="grid" style="margin-top:16px">
+  <button class="card" onclick="go('dashboard')"><h3>📈 My Learning Dashboard</h3><p>Track scores, progress and study suggestions.</p></button>
+  <button class="card" onclick="go('leaderboard')"><h3>🏆 Competition</h3><p>Weekly and monthly student rankings.</p></button>
+  <button class="card" onclick="go('notifications')"><h3>🔔 Notifications</h3><p>Announcements and learning updates.</p></button>
+  <button class="card" onclick="go('tools')"><h3>🧮 Smart Tools</h3><p>Calculators and useful utilities.</p></button>
+  <button class="card" onclick="go('learn')"><h3>📚 Learning Guides</h3><p>Explore learning materials.</p></button>
+  <button class="card" onclick="go('admin')"><h3>🔐 Admin Dashboard</h3><p>Administration and reports.</p></button>
+  <button class="card" onclick="go('about')"><h3>ℹ️ About</h3><p>Learn about Naija Smart Hub.</p></button>
+  <button class="card" onclick="go('contact')"><h3>✉️ Contact</h3><p>Get in touch.</p></button>
+ </div>
+</section>
+<section id="dashboard" class="section">
+ <div class="hero"><span class="eyebrow">YOUR PERSONAL LEARNING SPACE</span><h1>📈 My Learning Dashboard</h1><p>See how you are progressing, celebrate improvements and choose what to practise next.</p><button class="btn primary" onclick="nshLoadStudentDashboard()">Refresh my progress ↻</button></div>
+ <div class="notice" id="studentDashNotice">Sign in to view your saved progress across devices. Guest activity may only be available on this device.</div>
+ <div class="stats" style="margin-top:14px">
+  <div class="stat"><b id="dashAttempts">0</b><span>Recorded attempts</span></div>
+  <div class="stat"><b id="dashAverage">—</b><span>Average score</span></div>
+  <div class="stat"><b id="dashBest">—</b><span>Best score</span></div>
+ </div>
+ <div class="panel" style="margin-top:14px"><div class="sectionhead"><div><h3>📚 Subject performance</h3><p>Your recent scores by subject.</p></div></div><div id="dashSubjectChart"><p class="notice">Your subject progress will appear here after you complete quizzes or exams.</p></div></div>
+ <div class="panel" style="margin-top:14px"><h3>🎯 Your next study steps</h3><div id="dashRecommendations"><p>Complete a quiz or practice exam to receive study suggestions.</p></div></div>
+ <div class="panel" style="margin-top:14px"><h3>📝 Recent examination results</h3><div id="dashExamHistory"><p>Sign in and complete an examination to build your history.</p></div></div>
+</section>
+
+<section id="tools" class="section">
+ <div class="sectionhead"><div><h2>🧮 Smart Tools</h2><p>Simple calculators for everyday use.</p></div></div>
+ <div class="panel"><div class="tooltabs"><button class="pill active" onclick="setTool('basic',this)">Calculator</button><button class="pill" onclick="setTool('percent',this)">Percentage</button><button class="pill" onclick="setTool('age',this)">Age</button></div>
+ <div id="basicTool"><input class="calcdisplay" id="calcDisplay" value="0" readonly aria-label="Calculator display"><div class="calcgrid"><button class="calcbtn" onclick="calcPress('7')">7</button><button class="calcbtn" onclick="calcPress('8')">8</button><button class="calcbtn" onclick="calcPress('9')">9</button><button class="calcbtn op" onclick="calcPress('/')">÷</button><button class="calcbtn" onclick="calcPress('4')">4</button><button class="calcbtn" onclick="calcPress('5')">5</button><button class="calcbtn" onclick="calcPress('6')">6</button><button class="calcbtn op" onclick="calcPress('*')">×</button><button class="calcbtn" onclick="calcPress('1')">1</button><button class="calcbtn" onclick="calcPress('2')">2</button><button class="calcbtn" onclick="calcPress('3')">3</button><button class="calcbtn op" onclick="calcPress('-')">−</button><button class="calcbtn" onclick="calcPress('0')">0</button><button class="calcbtn" onclick="calcPress('.')">.</button><button class="calcbtn op" onclick="calcClear()">AC</button><button class="calcbtn op" onclick="calcPress('+')">+</button><button class="calcbtn op" style="grid-column:span 4;background:#20d6a2;color:#062018" onclick="calcEquals()">Calculate =</button></div></div>
+ <div id="percentTool" class="hidden"><label class="label" for="percentRate">What percentage?</label><input id="percentRate" class="field" type="number" inputmode="decimal" placeholder="e.g. 15"><label class="label" for="percentValue">Of what number?</label><input id="percentValue" class="field" type="number" inputmode="decimal" placeholder="e.g. 2000"><button class="btn primary" onclick="percentageCalc()">Calculate percentage</button><div id="percentResult" class="result hidden"></div></div>
+ <div id="ageTool" class="hidden"><label class="label" for="birthDate">Your date of birth</label><input id="birthDate" class="field" type="date"><button class="btn primary" onclick="ageCalc()">Calculate age</button><div id="ageResult" class="result hidden"></div></div>
+ </div>
+</section>
+
+<section id="learn" class="section">
+ <div class="sectionhead"><div><h2>📚 Learn & Grow</h2><p>Short, practical guides to build good habits.</p></div></div>
+ <div class="panel">
+  <article class="article"><h3>🎯 How to study more effectively</h3><p>Choose one clear topic, study in short focused sessions, take a brief break, then test yourself without looking at your notes. Return to difficult topics later.</p></article>
+  <article class="article"><h3>💡 Build a simple daily learning habit</h3><p>Set a realistic daily goal, remove distractions, keep track of what you learn and review your progress each week. Consistency is more useful than a huge plan you cannot maintain.</p></article>
+  <article class="article"><h3>🔐 Stay safer online</h3><p>Use strong, unique passwords, turn on two-step verification when available, avoid suspicious links and never share passwords or verification codes with anyone.</p></article>
+  <article class="article"><h3>🧮 A quick percentage example</h3><p>To find 10% of 500, calculate 500 × 10 ÷ 100 = 50. For any percentage, multiply the number by the percentage and divide by 100.</p></article>
+ </div>
+</section>
+
+<section id="about" class="section hidden">
+ <div class="sectionhead"><div><h2>ℹ️ About Naija Smart Hub</h2><p>Learn more. Play smarter. Find useful tools in one place.</p></div></div>
+ <div class="panel">
+  <p><strong>Naija Smart Hub</strong> is an online learning and entertainment platform designed to make useful digital activities simple, accessible and enjoyable.</p>
+  <p>Our website brings together:</p>
+  <ul>
+   <li><strong>Interactive quizzes</strong> to practise general knowledge and learn new facts.</li>
+   <li><strong>Brain games and challenges</strong> for fun problem-solving and thinking practice.</li>
+   <li><strong>Everyday calculators</strong> for quick, practical calculations.</li>
+   <li><strong>Learning resources</strong> with short guides and helpful information.</li>
+  </ul>
+  <p><strong>Our mission</strong> is to bring learning, entertainment and practical digital tools together in one convenient, mobile-friendly place.</p>
+  <p>We aim to keep our content clear and useful, and we may improve or add features over time.</p>
+  <p><strong>Contact:</strong> <a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a></p>
+ </div>
+</section>
+<section id="contact" class="section hidden">
+ <div class="sectionhead"><div><h2>✉️ Contact</h2><p>We welcome useful feedback and corrections.</p></div></div>
+ <div class="panel"><p>For questions, feedback or correction requests, email the Naija Smart Hub team:</p><p><strong><a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a></strong></p></div>
+</section>
+<section id="privacy" class="section hidden">
+ <div class="sectionhead"><div><h2>🔒 Privacy Policy</h2><p>How this site handles information.</p></div></div>
+ <div class="panel privacytext">
+<p><b>Last updated:</b> 30 October 2026</p>
+<p>Naija Smart Hub (“we”, “our” or “this website”) provides browser-based games, quizzes, calculators and learning content. This policy explains what information may be handled when you visit the website.</p>
+
+<h3>1. Information you provide</h3>
+<p>The website offers optional student accounts using Firebase Authentication. If you create an account, the service processes your email address, password (handled by Firebase Authentication), and chosen display nickname. Your account profile is stored in Firebase Firestore. Use a nickname rather than your full name or other identifying details. A parent or guardian should oversee account setup for younger users. You can continue using the website without an account. If you contact us by email, we will receive the information you choose to include in your message, such as your email address and the contents of your message. We use it to respond to you and handle your request.</p>
+
+<h3>2. Games, quizzes and calculators</h3>
+<p>Answers and values entered into the games, quizzes and calculators are used to operate those features and display results in your browser. Do not enter passwords, financial details or other sensitive personal information into these tools.</p>
+
+<h3>3. Cookies and similar technologies</h3>
+<p>The website may use essential browser storage or similar technologies to support basic features. At the time this policy was updated, we have not intentionally added third-party analytics or advertising services. If we add services that use cookies or similar technologies, we will update this policy to explain them before or when they are introduced.</p>
+
+<h3>4. Advertising</h3>
+<p>Advertising is not currently enabled on this website. If we later use Google AdSense or another advertising provider, that provider may use cookies or similar technologies to show, measure or personalise advertisements, subject to its own policies and applicable settings. We will update this policy and provide any required notices or choices before enabling advertising.</p>
+
+<h3>5. Third-party services and links</h3>
+<p>If the website later includes links to third-party websites or services, those services operate under their own privacy policies. We are not responsible for the privacy practices of websites we do not operate.</p>
+
+<h3>6. Data security and retention</h3>
+<p>We take reasonable steps appropriate to this small website. Email messages sent to us may be kept for as long as reasonably needed to respond, maintain records or address follow-up questions. No method of internet transmission or electronic storage can be guaranteed to be completely secure.</p>
+
+<h3>7. Children’s privacy</h3>
+<p>This website is intended for a general audience. We do not knowingly ask children to provide personal information. Parents or guardians who believe a child has sent us personal information may contact us so we can review the request.</p>
+
+<h3>8. Your choices and questions</h3>
+<p>You can choose not to send us an email or enter information into the website’s tools. For privacy questions or requests relating to an email you have sent us, contact <a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a>.</p>
+
+<h3>9. Changes to this policy</h3>
+<p>We may update this policy when the website’s features or services change. The “Last updated” date at the top will show when the latest changes were made.</p>
+
+<div class="notice">This policy is a practical website notice, not legal advice. Review it again whenever you add advertising, analytics, forms, accounts, embedded content or other third-party services. Make sure it matches the website’s actual practices and the laws that apply to your visitors.</div>
+</div>
+</section>
+<section id="terms" class="section hidden">
+ <div class="sectionhead"><div><h2>📄 Terms and Conditions</h2><p>Simple rules for using Naija Smart Hub.</p></div></div>
+ <div class="panel">
+  <p><strong>Last updated:</strong> 30 October 2026</p>
+  <p>Welcome to Naija Smart Hub. By visiting or using this website, you agree to these Terms and Conditions. If you do not agree, please stop using the website.</p>
+  <h3>1. About the website</h3>
+  <p>Naija Smart Hub provides browser-based games, quizzes, calculators and learning resources for general information, practice and entertainment.</p>
+  <h3>2. Acceptable use</h3>
+  <p>Please use the website lawfully and respectfully. You must not attempt to disrupt the website, interfere with its security or operation, misuse its features, or use it to violate another person's rights or applicable laws.</p>
+  <h3>3. Educational and calculator information</h3>
+  <p>Quizzes and learning materials are provided for general learning and practice. Calculator results are generated from the values entered by the visitor. Check important results independently before relying on them. The website is not a substitute for professional, financial, medical or legal advice.</p>
+  <h3>4. Content and availability</h3>
+  <p>We aim to keep the website useful and available, but features, content and access may change or be temporarily unavailable. We may correct, update, suspend or remove parts of the website when reasonably necessary.</p>
+  <h3>5. Intellectual property</h3>
+  <p>Unless otherwise stated, the website's original text, design and materials belong to Naija Smart Hub or are used with permission. You may use the website for personal, non-commercial purposes. Do not copy, republish or commercially exploit website materials without permission, except where the law allows.</p>
+  <h3>6. Third-party websites and services</h3>
+  <p>The website may link to third-party websites or services. Those services are operated independently and have their own terms and privacy practices. We are not responsible for their content, availability or practices.</p>
+  <h3>7. Disclaimer and limitation</h3>
+  <p>The website is provided on an “as available” basis. To the extent permitted by applicable law, we make no guarantee that it will always be uninterrupted, error-free or suitable for every purpose. Nothing in these terms excludes rights or responsibilities that cannot legally be excluded.</p>
+  <h3>8. Changes to these terms</h3>
+  <p>We may update these Terms and Conditions as the website changes. The “Last updated” date above will show when the latest version was made.</p>
+  <h3>9. Contact</h3>
+  <p>Questions about these terms can be sent to <a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a>.</p>
+  <div class="notice">These terms are a general starting point, not legal advice. Review them for your circumstances and applicable laws, especially before adding paid services, user accounts, user submissions or advertising.</div>
+ </div>
+</section>
+<section id="exam" class="section">
+ <div class="sectionhead"><div><h2>📝 Online Examination Centre</h2><p>Timed practice exams with automatic marking and answer review.</p></div></div>
+ <div class="panel" id="examSetup">
+  <h3>Prepare for your practice exam</h3>
+  <p>Choose one subject. The exam contains 40 shuffled questions and lasts 30 minutes.</p>
+  <label for="examSubject" style="display:block;font-weight:800;margin:12px 0 6px">Select subject</label>
+  <select id="examSubject" class="field" style="width:100%;padding:13px;border-radius:12px"></select>
+  <div class="stats" style="margin:14px 0"><div class="stat"><b>40</b><span>questions</span></div><div class="stat"><b>30 min</b><span>time limit</span></div><div class="stat"><b>100</b><span>total marks</span></div></div>
+  <p class="notice">This is a practice exam, not an official examination. Your answers are marked when you submit.</p>
+  <button class="btn primary" onclick="nshStartExam()">Start examination →</button>
+ </div>
+ <div class="panel hidden" id="examRun">
+  <div style="display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap"><strong id="examSubjectTitle">Practice exam</strong><strong id="examClock" aria-live="polite">30:00</strong></div>
+  <div style="height:8px;background:var(--line);border-radius:20px;margin:12px 0;overflow:hidden"><div id="examProgressBar" style="height:100%;width:0%;background:var(--accent);transition:width .2s"></div></div>
+  <p id="examQuestionCount" class="tiny">QUESTION 1 OF 40</p>
+  <h3 id="examQuestionText" style="line-height:1.5"></h3>
+  <div id="examOptions" class="quiz-answer-grid"></div>
+  <div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:16px"><button class="btn secondary" id="examPrev" onclick="nshExamMove(-1)">← Previous</button><button class="btn primary" id="examNext" onclick="nshExamMove(1)">Next →</button><button class="btn" style="background:#b93852;color:white" onclick="nshSubmitExam(false)">Submit exam</button></div>
+  <p id="examAnsweredCount" class="notice" aria-live="polite"></p>
+ </div>
+ <div class="panel hidden" id="examResult">
+  <div class="eyebrow">EXAM COMPLETED</div><h2 id="examResultTitle">Your result</h2><div class="stats"><div class="stat"><b id="examMark">0/40</b><span>correct answers</span></div><div class="stat"><b id="examPercent">0%</b><span>score</span></div><div class="stat"><b id="examGrade">—</b><span>practice grade</span></div></div>
+  <p id="examResultMessage"></p><h3>Answer review</h3><div id="examReview"></div>
+  <button class="btn primary" onclick="nshResetExam()">Take another exam</button><button class="btn secondary" onclick="go('home')">Back to home</button>
+ </div>
+
+ <div class="panel" id="examManagementPanel" style="margin-top:18px">
+  <div class="sectionhead"><div><h3>🛠️ Exam Management</h3><p>Administrator tools for scheduling exams and reviewing results.</p></div></div>
+  <div class="notice">Administrator sign-in is required. Exam schedules and result records are stored in Firebase when the matching Firestore rules are enabled.</div>
+  <div class="grid" style="display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))">
+   <label>Exam title<input id="managedExamTitle" class="field" maxlength="80" placeholder="e.g. November Mock Exam" style="width:100%"></label>
+   <label>Subject<select id="managedExamSubject" class="field" style="width:100%"></select></label>
+   <label>Start date and time<input id="managedExamStart" type="datetime-local" class="field" style="width:100%"></label>
+   <label>End date and time<input id="managedExamEnd" type="datetime-local" class="field" style="width:100%"></label>
+   <label>Pass mark (%)<input id="managedExamPass" type="number" min="1" max="100" value="50" class="field" style="width:100%"></label>
+  </div>
+  <button class="btn primary" onclick="nshCreateManagedExam()">Publish exam schedule</button>
+  <p id="examManagementStatus" class="notice" aria-live="polite">Sign in as an administrator to manage exams.</p>
+  <h3>📅 Scheduled exams</h3><div id="managedExamList" class="result">Schedules will appear here.</div>
+  <h3 style="margin-top:18px">📊 Student results</h3><button class="btn secondary" onclick="nshLoadManagedResults()">Refresh results</button><button class="btn secondary" onclick="nshExportManagedResults()">Download CSV report</button>
+  <div id="managedResultsList" class="result">Select refresh to load results.</div>
+ </div>
+</section>
+</main>
+<footer class="foot"><div class="brand" style="justify-content:center"><span class="logo">🇳🇬</span><span>NAIJA SMART HUB<small>LEARN · PLAY · GROW</small></span></div><div class="footlinks"><button onclick="go('about')">About</button><button onclick="go('contact')">Contact</button><button onclick="go('privacy')">Privacy Policy</button><button onclick="go('home')">Back to top ↑</button></div><p>Free learning and fun tools, made for mobile.</p><p>© <span id="year"></span> Naija Smart Hub</p></footer>
+</div>
+<nav class="bottomnav" aria-label="Main navigation"><div class="navinner">
+<button class="navitem active" data-nav="home" onclick="go('home')"><span>⌂</span>Home</button>
+<button class="navitem" data-nav="quizzes" onclick="go('quizzes')"><span>🧠</span>Quizzes</button>
+<button class="navitem" data-nav="games" onclick="go('games')"><span>🎮</span>Games</button>
+<button class="navitem" data-nav="account" onclick="go('account')"><span>👤</span>Account</button>
+<button class="navitem" data-nav="more" onclick="go('more')"><span>☰</span>More</button>
+</div></nav>
+<div id="toast" class="toast hidden" role="status"></div>
+<script>
+const $=id=>document.getElementById(id);
+function nshPrepareSeparatePages(){
+ const main=document.querySelector('main'); if(!main)return;
+ [...main.querySelectorAll('section section')].forEach(sec=>main.appendChild(sec));
+ main.querySelectorAll(':scope > section').forEach(sec=>{
+  sec.classList.remove('page-active');
+  sec.classList.add('hidden');
+ });
+ const home=main.querySelector(':scope > section#home');
+ if(home){home.classList.remove('hidden');home.classList.add('page-active');}
+}
+nshPrepareSeparatePages();
+if(typeof nshInitExam==='function')nshInitExam();
+if(typeof nshInitManagedExam==='function')nshInitManagedExam();
+// Reliable bottom-navigation handling, including the More menu on mobile browsers.
+document.addEventListener('click',function(event){
+ const button=event.target.closest && event.target.closest('.navitem[data-nav]');
+ if(!button)return;
+ event.preventDefault();
+ const page=button.getAttribute('data-nav');
+ if(page)go(page);
+});
+function go(id){
+ const main=document.querySelector('main');
+ if(!main)return;
+ const target=document.getElementById(id);
+ if(!target || target.tagName!=='SECTION'){console.warn('Page not found:',id);return;}
+ // Some pages (including More) were left outside <main> in the previous build.
+ // Move the requested page into the page container before showing it.
+ if(target.parentElement!==main) main.appendChild(target);
+ main.querySelectorAll(':scope > section').forEach(sec=>{
+  const active=sec===target;
+  sec.classList.toggle('page-active',active);
+  sec.classList.toggle('hidden',!active);
+ });
+ document.querySelectorAll('.navitem').forEach(n=>{
+  const active=(n.dataset.nav===id) ||
+   (['dashboard','leaderboard','notifications','tools','learn','admin','about','contact','privacy','terms'].includes(id)&&n.dataset.nav==='more');
+  n.classList.toggle('active',active);
+ });
+ if(id==='dashboard')nshLoadStudentDashboard();
+ if(id==='admin'&&typeof loadAdminDashboard==='function')loadAdminDashboard();
+ if(id==='leaderboard'&&typeof loadCompetitionRankings==='function')loadCompetitionRankings('week');
+ if(id==='notifications'&&typeof loadStudentNotifications==='function')loadStudentNotifications();
+ try{history.replaceState({page:id},'',location.pathname+'?view='+encodeURIComponent(id));}catch(e){}
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+function toast(msg){$('toast').textContent=msg;$('toast').classList.remove('hidden');setTimeout(()=>$('toast').classList.add('hidden'),2200)}
+$('year').textContent=new Date().getFullYear();
+$('themeBtn').addEventListener('click',()=>{document.body.classList.toggle('light');let light=document.body.classList.contains('light');document.body.style.setProperty('--bg',light?'#edf4f8':'#07111f');document.body.style.setProperty('--panel',light?'#ffffff':'#101e31');document.body.style.setProperty('--panel2',light?'#e5eef6':'#152640');document.body.style.setProperty('--text',light?'#102033':'#f4f7fb');document.body.style.setProperty('--muted',light?'#53677e':'#a9b8cc');document.body.style.setProperty('--line',light?'#d2deea':'#243852');document.body.style.background=light?'#edf4f8':'radial-gradient(ellipse at 50% -15%,#173457 0,transparent 48%),#07111f';$('themeBtn').textContent=light?'☾':'☼';});
+$('searchBtn').onclick=searchSite;$('searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')searchSite()});
+function searchSite(){let q=$('searchInput').value.trim().toLowerCase();if(!q)return toast('Type something to search.');let map=[['games',['game','number','riddle','brain']],['quizzes',['quiz','question','knowledge']],['dashboard',['dashboard','my progress','performance','study progress']],['leaderboard',['leaderboard','competition','score','daily challenge']],['tools',['tool','calculator','age','percentage','math']],['learn',['learn','study','article','safety']],['privacy',['privacy']],['contact',['contact','email']],['about',['about']],['account',['account','login','sign up','register','profile']]];let hit=map.find(([id,words])=>words.some(w=>q.includes(w)));if(hit){go(hit[0]);toast('Showing '+hit[0]+'.')}else toast('Try searching games, quizzes, tools or learning.')}
+let mathA=0,mathB=0,mathOp='+';
+function openGame(id){$('numberGame').classList.toggle('hidden',id!=='numberGame');$('riddleGame').classList.toggle('hidden',id!=='riddleGame');if(id==='numberGame')newMath();if(id==='riddleGame')newRiddle();$(id).scrollIntoView({behavior:'smooth',block:'nearest'})}
+function newMath(){mathOp=Math.random()<.5?'+':'−';mathA=1+Math.floor(Math.random()*30);mathB=1+Math.floor(Math.random()*20);if(mathOp==='−'&&mathB>mathA)[mathA,mathB]=[mathB,mathA];$('mathQuestion').textContent=`What is ${mathA} ${mathOp} ${mathB}?`;$('mathAnswer').value='';$('mathResult').classList.add('hidden')}
+function checkMath(){let expected=mathOp==='+'?mathA+mathB:mathA-mathB;let v=Number($('mathAnswer').value);$('mathResult').textContent=v===expected?'Correct! Great work. 🎉':`Not quite. The answer is ${expected}. Try a new question!`;$('mathResult').classList.remove('hidden')}
+const riddles=[['What has keys but cannot open locks?','A piano.'],['What gets wetter the more it dries?','A towel.'],['What has a face and two hands but no arms or legs?','A clock.'],['What has to be broken before you can use it?','An egg.'],['What goes up but never comes down?','Your age.'],['What has one eye but cannot see?','A needle.']];
+let ri=0;function newRiddle(){ri=Math.floor(Math.random()*riddles.length);$('riddleQuestion').textContent=riddles[ri][0];$('riddleAnswer').classList.add('hidden');$('riddleAnswer').textContent=''}function showRiddle(){$('riddleAnswer').textContent='Answer: '+riddles[ri][1];$('riddleAnswer').classList.remove('hidden')}
+
+function setTool(tool,btn){['basic','percent','age'].forEach(t=>$(t+'Tool').classList.toggle('hidden',t!==tool));document.querySelectorAll('.tooltabs .pill').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}
+let calc='0';function calcPress(v){if(calc==='0'&&'0123456789.'.includes(v))calc=v;else if(calc.length<30)calc+=v;$('calcDisplay').value=calc}
+function calcClear(){calc='0';$('calcDisplay').value=calc}
+function calcEquals(){try{if(!/^[0-9+\-*/.() ]+$/.test(calc))throw 0;let out=Function('"use strict";return ('+calc+')')();if(!Number.isFinite(out))throw 0;calc=String(Math.round(out*1e8)/1e8);$('calcDisplay').value=calc}catch(e){calc='0';$('calcDisplay').value='Error';setTimeout(()=>$('calcDisplay').value=calc,1300)}}
+function percentageCalc(){let r=Number($('percentRate').value),v=Number($('percentValue').value);if($('percentRate').value===''||$('percentValue').value==='')return toast('Enter both numbers first.');$('percentResult').textContent=`${r}% of ${v} = ${(r*v/100).toLocaleString()}`;$('percentResult').classList.remove('hidden')}
+function ageCalc(){let s=$('birthDate').value;if(!s)return toast('Choose your date of birth.');let b=new Date(s+'T00:00:00'),n=new Date();if(b>n)return toast('Date of birth cannot be in the future.');let years=n.getFullYear()-b.getFullYear(),months=n.getMonth()-b.getMonth(),days=n.getDate()-b.getDate();if(days<0){months--;days+=new Date(n.getFullYear(),n.getMonth(),0).getDate()}if(months<0){years--;months+=12}$('ageResult').textContent=`You are ${years} years, ${months} months and ${days} days old.`;$('ageResult').classList.remove('hidden')}
+
+// Student rewards: 10 points per correct answer plus a 20-point quiz completion bonus.
+const REWARD_LOCAL_KEY='nsh_rewards_v1';
+function rewardLevel(points){if(points>=1000)return 'Champion';if(points>=500)return 'Master';if(points>=200)return 'Achiever';if(points>=50)return 'Learner';return 'Starter';}
+function renderRewards(data){data=data||{};const points=Math.max(0,Number(data.points)||0),quizzes=Math.max(0,Number(data.quizzesCompleted)||0);const level=rewardLevel(points);const el=id=>document.getElementById(id);if(!el('rewardPoints'))return;el('rewardPoints').textContent=points;el('rewardLevel').textContent=level;el('rewardQuizzes').textContent=quizzes;const next=points<50?50:points<200?200:points<500?500:points<1000?1000:null;el('rewardNext').textContent=next?'You have '+points+' points. Earn '+(next-points)+' more to reach the next level.':'You have reached the highest current level. Keep learning!';const badges=[];if(quizzes>=1)badges.push('🌱 First Steps');if(points>=50)badges.push('⭐ Rising Star');if(points>=200)badges.push('🏅 Achiever');if(points>=500)badges.push('🔥 Master');if(points>=1000)badges.push('👑 Champion');el('rewardBadges').innerHTML=badges.length?badges.map(x=>'<span class="pill">'+x+'</span>').join(''):'<span class="pill">Complete your first quiz to earn a badge.</span>';}
+function readLocalRewards(){try{return JSON.parse(localStorage.getItem(REWARD_LOCAL_KEY)||'{"points":0,"quizzesCompleted":0}')}catch(e){return {points:0,quizzesCompleted:0}}}
+async function awardQuizRewards(score,total){const earned=Math.max(0,Number(score)||0)*10+20;const user=nshAuth&&nshAuth.currentUser;if(user&&!user.isAnonymous&&nshDb){try{const ref=nshDb.collection('users').doc(user.uid);await ref.set({points:firebase.firestore.FieldValue.increment(earned),quizzesCompleted:firebase.firestore.FieldValue.increment(1),lastRewardAt:firebase.firestore.FieldValue.serverTimestamp()},{merge:true});const doc=await ref.get();renderRewards(doc.data());toast('🎉 You earned '+earned+' points!');return;}catch(e){console.warn('Cloud rewards unavailable; using this device:',e);}}
+ const data=readLocalRewards();data.points=(Number(data.points)||0)+earned;data.quizzesCompleted=(Number(data.quizzesCompleted)||0)+1;localStorage.setItem(REWARD_LOCAL_KEY,JSON.stringify(data));renderRewards(data);toast('🎉 You earned '+earned+' points on this device!');}
+async function loadStudentRewards(user){if(!user||user.isAnonymous){renderRewards(readLocalRewards());return;}try{const doc=await nshDb.collection('users').doc(user.uid).get();renderRewards(doc.exists?doc.data():{});}catch(e){renderRewards(readLocalRewards());}}
+
+// Daily attendance: one check-in per calendar day, stored in the signed-in student's account.
+function attendanceDateKey(d=new Date()){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`;}
+function dayBefore(key){const d=new Date(key+'T12:00:00');d.setDate(d.getDate()-1);return attendanceDateKey(d);}
+function renderAttendance(data={}){const streak=Math.max(0,Number(data.loginStreak)||0),days=Math.max(0,Number(data.attendanceDays)||0),today=attendanceDateKey();const checked=data.lastAttendanceDate===today;const el=id=>document.getElementById(id);if(!el('attendanceStreak'))return;el('attendanceStreak').textContent=streak;el('attendanceDays').textContent=days;el('attendanceStatus').textContent=checked?'Done':'Pending';el('attendanceMessage').textContent=checked?'You have checked in today. Come back tomorrow to continue your streak!':'Your check-in will be recorded when you sign in today.';}
+async function recordDailyAttendance(user){if(!user||user.isAnonymous||!nshDb){renderAttendance({});return;}const ref=nshDb.collection('users').doc(user.uid),today=attendanceDateKey();try{await nshDb.runTransaction(async tx=>{const snap=await tx.get(ref),data=snap.exists?snap.data():{};if(data.lastAttendanceDate===today)return;const streak=data.lastAttendanceDate===dayBefore(today)?(Number(data.loginStreak)||0)+1:1;tx.set(ref,{lastAttendanceDate:today,loginStreak:streak,attendanceDays:firebase.firestore.FieldValue.increment(1),lastAttendanceAt:firebase.firestore.FieldValue.serverTimestamp()},{merge:true});});const fresh=await ref.get();renderAttendance(fresh.exists?fresh.data():{});}catch(e){console.warn('Attendance could not be saved:',e);renderAttendance({});const el=document.getElementById('attendanceMessage');if(el)el.textContent='Attendance could not sync. Please check your connection and sign in again.';}}
+
+// Firebase-backed shared leaderboard, with local fallback.
+const PLAYER_KEY='nsh_player_name_v1';
+function getPlayerName(){return (localStorage.getItem(PLAYER_KEY)||'').trim();}
+function savePlayerName(){const input=$('playerName'),name=(input.value||'').trim().replace(/[<>]/g,'').slice(0,20);if(name.length<2)return toast('Choose a name with at least 2 characters.');localStorage.setItem(PLAYER_KEY,name);input.value=name;toast('Player name saved!');renderLeaderboard();}
+function escapeScoreText(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function setLeaderboardStatus(message){const el=$('leaderboardStatus');if(el)el.textContent=message;}
+let nshAuth=null,nshDb=null,nshFirebaseReady=false;
+let notificationRows=[];
+function safeNoticeDate(value){
+ try{const d=value&&value.toDate?value.toDate():new Date(value);return isNaN(d.getTime())?'Recently':d.toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'});}
+ catch(e){return 'Recently';}
+}
+async function loadStudentNotifications(){
+ const box=$('studentNotifications'),count=$('notificationCount');
+ if(!box)return;
+ if(!nshDb){box.innerHTML='<p>Connect to the internet and refresh to load announcements.</p>';return;}
+ box.innerHTML='<p>Loading announcements…</p>';
+ try{
+  const snap=await nshDb.collection('announcements').orderBy('createdAt','desc').limit(30).get();
+  notificationRows=snap.docs.map(d=>({id:d.id,...d.data()}));
+  if(count)count.textContent=notificationRows.length+' updates';
+  if(!notificationRows.length){box.innerHTML='<div class="result">No announcements yet. Check back for new learning updates.</div>';return;}
+  box.innerHTML=notificationRows.map(n=>'<article class="article"><h3>📢 '+escapeScoreText(n.title||'Announcement')+'</h3><p>'+escapeScoreText(n.message||'')+'</p><p class="small" style="margin-top:7px">📅 '+escapeScoreText(safeNoticeDate(n.createdAt))+'</p></article>').join('');
+ }catch(err){console.error('Notifications:',err);box.innerHTML='<div class="notice">Announcements could not be loaded. The administrator may need to update the Firestore security rules.</div>';}
+}
+async function publishStudentAnnouncement(){
+ const title=($('announcementTitle').value||'').trim();
+ const message=($('announcementMessage').value||'').trim();
+ const status=$('announcementAdminStatus');
+ if(title.length<3||message.length<5){status.textContent='Please enter a title and a message.';return;}
+ if(!nshAuth||!nshAuth.currentUser||nshAuth.currentUser.isAnonymous){status.textContent='Please sign in with your administrator account.';return;}
+ status.textContent='Publishing…';
+ try{
+  const adminDoc=await nshDb.collection('admins').doc(nshAuth.currentUser.uid).get();
+  if(!adminDoc.exists){status.textContent='Administrator access is required.';return;}
+  await nshDb.collection('announcements').add({
+   title:title.slice(0,90),message:message.slice(0,600),
+   createdAt:firebase.firestore.FieldValue.serverTimestamp(),
+   createdBy:nshAuth.currentUser.uid
+  });
+  $('announcementTitle').value='';$('announcementMessage').value='';
+  status.textContent='Announcement published successfully.';
+  await loadStudentNotifications();
+ }catch(err){console.error(err);status.textContent='Could not publish. Check that the announcements Firestore rules have been added and published.';}
+}
+async function initSharedLeaderboard(){
+ try{
+  if(!window.firebase){setLeaderboardStatus('Could not load Firebase. Please refresh the page.');return;}
+  if(!firebase.apps.length)firebase.initializeApp({apiKey:"AIzaSyBFPN5KZrx2BU13tgVS9Ar6tLuJJA8bW0I",authDomain:"naija-smart-hub.firebaseapp.com",projectId:"naija-smart-hub",storageBucket:"naija-smart-hub.firebasestorage.app",messagingSenderId:"647121245546",appId:"1:647121245546:web:692973f91b2f6d14dd4113"});
+  nshAuth=firebase.auth();nshDb=firebase.firestore();
+  if(!nshAuth.currentUser) await nshAuth.signInAnonymously();
+  nshAuth.onAuthStateChanged(async user=>{
+   await loadStudentRewards(user);
+   if(user && !user.isAnonymous){$('accountSignedOut').classList.add('hidden');$('accountSignedIn').classList.remove('hidden');$('accountWelcome').textContent=getPlayerName()||'Student';await recordDailyAttendance(user);}
+   else{$('accountSignedOut').classList.remove('hidden');$('accountSignedIn').classList.add('hidden');}
+   nshFirebaseReady=true;setLeaderboardStatus('Connected! Scores are shared across devices.');updateReferralPanel(user);
+   const adminBtn=$('adminOpenBtn');
+   if(user && !user.isAnonymous){
+    try{const adminDoc=await nshDb.collection('admins').doc(user.uid).get();if(adminDoc.exists)adminBtn.classList.remove('hidden');else adminBtn.classList.add('hidden');}
+    catch(adminErr){console.warn('Admin check unavailable:',adminErr);adminBtn.classList.add('hidden');}
+   }else if(adminBtn){adminBtn.classList.add('hidden');}
+   await renderLeaderboard();await loadStudentNotifications();
+  });
+  nshFirebaseReady=true;setLeaderboardStatus('Connected! Scores are shared across devices.');await renderLeaderboard();await loadStudentNotifications();
+ }catch(err){console.error('Firebase setup:',err);setLeaderboardStatus('Leaderboard connection is not ready. Check Anonymous sign-in and Firestore rules.');}
+}
+async function saveQuizResult(subject,score,total,mode){
+ await awardQuizRewards(score,total);
+ const name=getPlayerName()||'Guest',pct=Math.round((Number(score)/Number(total))*100);
+ const localEntry={name,subject,score:Number(score),total:Number(total),pct,mode,date:new Date().toISOString()};
+ try{const list=JSON.parse(localStorage.getItem('nsh_local_scores')||'[]');list.push(localEntry);localStorage.setItem('nsh_local_scores',JSON.stringify(list.slice(-30)));}catch(e){}
+ if(nshFirebaseReady&&nshAuth.currentUser){
+  try{await nshDb.collection('leaderboard').add({uid:nshAuth.currentUser.uid,displayName:name,subject:String(subject).slice(0,60),score:Number(score),total:Number(total),pct,mode:mode==='daily'?'daily':'subject',createdAt:firebase.firestore.FieldValue.serverTimestamp()});setLeaderboardStatus('Your score has been added to the global leaderboard!');}
+  catch(err){console.error('Score save:',err);setLeaderboardStatus('Your score was saved on this device, but could not reach the global leaderboard.');}
+ }else{setLeaderboardStatus('Global leaderboard is offline. Your score is saved on this device for now.');}
+ await renderLeaderboard();
+}
+async function renderLeaderboard(){
+ const area=$('leaderboardList');if(!area)return;
+ if(!nshFirebaseReady){area.innerHTML='<p style="color:var(--muted)">Connecting to global scores…</p>';return;}
+ try{
+  const snap=await nshDb.collection('leaderboard').orderBy('pct','desc').limit(10).get();
+  if(snap.empty){area.innerHTML='<p style="color:var(--muted)">No global scores yet. Complete a quiz to be the first!</p>';return;}
+  area.innerHTML=snap.docs.map((doc,i)=>{const r=doc.data(),date=r.createdAt&&r.createdAt.toDate?r.createdAt.toDate():new Date();return `<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)"><div><b>${i===0?'🥇':i===1?'🥈':i===2?'🥉':(i+1)+'.'} ${escapeScoreText(r.displayName)}</b><div style="font-size:12px;color:var(--muted)">${escapeScoreText(r.subject)} · ${r.mode==='daily'?'Daily challenge':'Subject quiz'} · ${date.toLocaleDateString()}</div></div><strong style="color:var(--green);white-space:nowrap">${Number(r.score)}/${Number(r.total)} (${Number(r.pct)}%)</strong></div>`}).join('');
+ }catch(err){console.error('Leaderboard read:',err);area.innerHTML='<p style="color:var(--muted)">Could not load scores. Check Firestore rules and internet connection.</p>';}
+}
+
+// Student Ranking & Competition Centre
+async function loadCompetitionRankings(period='week'){
+ const box=$('competitionRankingList');if(!box)return;
+ $('rankWeekBtn')?.classList.toggle('active',period==='week');
+ $('rankMonthBtn')?.classList.toggle('active',period==='month');
+ if(!nshFirebaseReady||!nshDb){box.textContent='Competition rankings are connecting. Please try again shortly.';return;}
+ box.textContent='Loading competition rankings…';
+ try{
+  const now=new Date(),start=new Date(now);
+  if(period==='week'){const day=(start.getDay()+6)%7;start.setDate(start.getDate()-day);start.setHours(0,0,0,0);}
+  else{start.setDate(1);start.setHours(0,0,0,0);}
+  const snap=await nshDb.collection('leaderboard').orderBy('createdAt','desc').limit(500).get();
+  const players=new Map();
+  snap.docs.forEach(doc=>{const r=doc.data(),date=r.createdAt&&r.createdAt.toDate?r.createdAt.toDate():null;if(!date||date<start||date>now||!r.uid)return;const key=String(r.uid);if(!players.has(key))players.set(key,{name:String(r.displayName||'Student'),count:0,totalPct:0,best:0});const p=players.get(key),pct=Math.max(0,Math.min(100,Number(r.pct)||0));p.count++;p.totalPct+=pct;p.best=Math.max(p.best,pct);});
+  const ranked=[...players.values()].map(p=>({...p,average:Math.round(p.totalPct/p.count)})).sort((a,b)=>b.average-a.average||b.count-a.count||b.best-a.best||a.name.localeCompare(b.name));
+  $('competitionPlayers').textContent=ranked.length;$('competitionEntries').textContent=ranked.reduce((n,p)=>n+p.count,0);$('competitionLeader').textContent=ranked[0]?ranked[0].name:'—';
+  if(!ranked.length){box.textContent='No quiz results recorded for this period yet. Complete a quiz to join!';return;}
+  box.innerHTML=ranked.slice(0,20).map((p,i)=>`<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)"><div><b>${i===0?'🥇':i===1?'🥈':i===2?'🥉':(i+1)+'.'} ${escapeScoreText(p.name)}</b><div style="font-size:12px;color:var(--muted)">${p.count} quiz ${p.count===1?'entry':'entries'} · Best ${p.best}%</div></div><strong style="color:var(--green);white-space:nowrap">${p.average}% avg.</strong></div>`).join('');
+ }catch(err){console.error('Competition rankings:',err);box.textContent='Could not load rankings. Check your connection and Firestore access.';}
+}
+
+function certificateEscape(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function openAchievementCertificate(data){
+ const w=window.open('','_blank');
+ if(!w){toast('Allow pop-ups to print your certificate.');return;}
+ const safe=certificateEscape;
+ w.document.write(`<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Certificate of Achievement</title><style>*{box-sizing:border-box}body{margin:0;padding:24px;background:#f1f4fa;font-family:Georgia,serif;color:#172746}.certificate{max-width:900px;margin:20px auto;padding:46px 30px;border:12px double #b88a32;background:#fffdf5;text-align:center;min-height:570px;display:flex;flex-direction:column;justify-content:center}.brand{font:800 14px Arial;letter-spacing:4px;color:#35618b}.medal{font-size:44px;margin:20px}.title{font-size:42px;color:#173b69;margin:8px 0}.subtitle{font:15px Arial;letter-spacing:2px;color:#9b762c}.name{font-size:36px;color:#173b69;border-bottom:1px solid #c6a45a;display:inline-block;padding:8px 28px;margin:20px auto}.copy{font:17px/1.7 Arial;color:#43516a}.score{font:bold 22px Arial;color:#176b59;margin:12px}.meta{font:12px Arial;color:#68758a;margin-top:30px}.actions{margin:15px auto;text-align:center}.actions button{padding:12px 20px;border:0;border-radius:8px;background:#173b69;color:white;font-weight:bold}@media print{body{padding:0;background:white}.certificate{margin:0 auto;min-height:95vh;break-inside:avoid}.actions{display:none}}@media(max-width:500px){.certificate{padding:28px 14px;min-height:520px}.title{font-size:30px}.name{font-size:27px}}</style></head><body><div class="certificate"><div class="brand">NAIJA SMART HUB</div><div class="medal">🏆</div><div class="subtitle">CERTIFICATE OF ACHIEVEMENT</div><h1 class="title">Well Done!</h1><p class="copy">This certificate is proudly presented to</p><div class="name">${safe(data.name)}</div><p class="copy">For successfully completing the <b>${safe(data.subject)}</b> quiz<br>and achieving an excellent result.</p><div class="score">${safe(data.score)} / ${safe(data.total)} — ${safe(data.pct)}%</div><p class="copy">Keep learning, growing and reaching new goals.</p><div class="meta">Awarded: ${safe(data.date)} &nbsp; | &nbsp; Certificate ID: ${safe(data.id)}</div></div><div class="actions"><button onclick="window.print()">Print / Save as PDF</button></div></body></html>`);
+ w.document.close();
+}
+function downloadMyCertificate(){const d=window.nshLastCertificate;if(!d||d.pct<80){toast('A score of at least 80% is needed.');return;}openAchievementCertificate(d);}
+function exportCertificateRegister(){
+ const eligible=adminReportData.scores.filter(r=>Number(r.pct)>=80);
+ const status=document.getElementById('certificateAdminStatus');
+ if(!eligible.length){status.textContent='No saved quiz results currently meet the 80% certificate threshold.';return;}
+ const rows=[['Student nickname','Subject','Score','Total questions','Percentage','Date']];
+ eligible.forEach(r=>rows.push([r.displayName||'Student',r.subject||'Quiz',r.score??'',r.total??'',r.pct??'',r.date||'Date unavailable']));
+ downloadAdminCSV('naija-smart-hub-eligible-achievements.csv',rows);
+ status.textContent=eligible.length+' eligible quiz achievement(s) exported. Students can print their individual certificates after completing a qualifying quiz.';
+}
+
+function adminEscape(v){return escapeScoreText(v);}
+let adminStudentRows=[];
+let adminReportData={students:[],scores:[]};
+function csvCell(value){const v=String(value??'');return '"'+v.replace(/"/g,'""')+'"';}
+function downloadAdminCSV(filename,rows){
+ const csv='\ufeff'+rows.map(row=>row.map(csvCell).join(',')).join('\r\n');
+ const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'}),url=URL.createObjectURL(blob);
+ const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);
+}
+function exportAdminCSV(kind){
+ const status=$('adminExportStatus');
+ if(kind==='scores'){
+  if(!adminReportData.scores.length){status.textContent='No quiz submissions are available to export yet.';return;}
+  const rows=[['Student nickname','Subject','Score','Total questions','Percentage','Mode','Date']];
+  adminReportData.scores.forEach(r=>rows.push([r.displayName||'Student',r.subject||'Quiz',r.score??'',r.total??'',r.pct??'',r.mode||'',r.date||'Date unavailable']));
+  downloadAdminCSV('naija-smart-hub-quiz-results.csv',rows);
+ }else{
+  if(!adminReportData.students.length){status.textContent='No student profiles are available to export yet.';return;}
+  const rows=[['Student nickname','Quiz submissions','Average score','Joined']];
+  adminReportData.students.forEach(r=>rows.push([r.name,r.quizzes,r.average+'%',r.joined]));
+  downloadAdminCSV('naija-smart-hub-student-summary.csv',rows);
+ }
+ status.textContent='Your CSV report has been prepared. Check your phone downloads.';
+}
+function printAdminReport(){
+ if(!adminReportData.scores.length&&!adminReportData.students.length){$('adminExportStatus').textContent='Load dashboard data before creating a report.';return;}
+ const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const rows=adminReportData.scores.map(r=>`<tr><td>${esc(r.displayName||'Student')}</td><td>${esc(r.subject||'Quiz')}</td><td>${esc(r.score??'')}/${esc(r.total??'')}</td><td>${esc(r.pct??'')}%</td><td>${esc(r.date||'Date unavailable')}</td></tr>`).join('');
+ const studentRows=adminReportData.students.map(r=>`<tr><td>${esc(r.name)}</td><td>${r.quizzes}</td><td>${r.average}%</td><td>${esc(r.joined)}</td></tr>`).join('');
+ const w=window.open('','_blank');
+ if(!w){$('adminExportStatus').textContent='Allow pop-ups for this site, then try the PDF report again.';return;}
+ w.document.write(`<!doctype html><html><head><title>Naija Smart Hub Report</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font:14px Arial,sans-serif;padding:24px;color:#172033}h1,h2{color:#174b8a}table{width:100%;border-collapse:collapse;margin:12px 0 28px}th,td{border:1px solid #ccd3df;padding:8px;text-align:left}th{background:#eef3fa}.note{color:#555;font-size:12px}@media print{button{display:none}}</style></head><body><h1>NAIJA SMART HUB</h1><h2>Admin Performance Report</h2><p>Generated: ${esc(new Date().toLocaleString())}</p><p class="note">Student nicknames and learning results only. No email addresses or passwords are included.</p><h2>Student Summary</h2><table><thead><tr><th>Nickname</th><th>Quiz submissions</th><th>Average</th><th>Joined</th></tr></thead><tbody>${studentRows||'<tr><td colspan="4">No student profiles</td></tr>'}</tbody></table><h2>Quiz Results</h2><table><thead><tr><th>Nickname</th><th>Subject</th><th>Score</th><th>Percent</th><th>Date</th></tr></thead><tbody>${rows||'<tr><td colspan="5">No quiz submissions</td></tr>'}</tbody></table><button onclick="window.print()">Print / Save as PDF</button></body></html>`);
+ w.document.close();$('adminExportStatus').textContent='Report opened in a new tab. Choose Print, then Save as PDF.';
+}
+
+function renderAdminStudents(query=''){
+ const area=$('adminStudentList');
+ if(!area)return;
+ const q=String(query||'').trim().toLowerCase();
+ const rows=adminStudentRows.filter(r=>(r.name||'Student').toLowerCase().includes(q));
+ if(!rows.length){area.innerHTML='<p>No matching student profiles found.</p>';return;}
+ area.innerHTML=rows.map(r=>`<div class="result" style="margin:8px 0;padding:12px"><b>👤 ${adminEscape(r.name||'Student')}</b><div style="font-size:13px;color:var(--muted);margin-top:5px">${r.quizzes} quiz submission${r.quizzes===1?'':'s'} · ${r.average}% average score</div><small style="color:var(--muted)">Joined: ${adminEscape(r.joined)}</small></div>`).join('');
+}
+function filterAdminStudents(){renderAdminStudents($('adminStudentSearch')?.value||'');}
+async function loadAdminDashboard(){
+ const status=$('adminStatus'),content=$('adminContent');
+ content.classList.add('hidden');
+ const user=nshAuth&&nshAuth.currentUser;
+ if(!user||user.isAnonymous){status.textContent='Please log in with your administrator account.';return;}
+ status.textContent='Verifying administrator access…';
+ try{
+  const adminDoc=await nshDb.collection('admins').doc(user.uid).get();
+  if(!adminDoc.exists){status.textContent='Access denied. This account is not an administrator.';return;}
+  status.textContent='Administrator access verified.';
+  const [usersSnap,scoresSnap]=await Promise.all([
+   nshDb.collection('users').get(),
+   nshDb.collection('leaderboard').get()
+  ]);
+  const scores=scoresSnap.docs.map(d=>d.data());
+  const reportDate=r=>r.createdAt&&r.createdAt.toDate?r.createdAt.toDate().toLocaleString():'Date unavailable';
+  adminReportData.scores=scores.map(r=>({displayName:String(r.displayName||'Student'),subject:String(r.subject||'Quiz'),score:Number(r.score)||0,total:Number(r.total)||0,pct:Number(r.pct)||0,mode:String(r.mode||''),date:reportDate(r)}));
+  // Advanced analytics are calculated from actual saved quiz submissions.
+  const now=new Date(),startToday=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  const dated=scores.map(r=>({r,date:r.createdAt&&r.createdAt.toDate?r.createdAt.toDate():null})).filter(x=>x.date);
+  const countSince=ms=>dated.filter(x=>x.date.getTime()>=now.getTime()-ms).length;
+  $('analyticsToday').textContent=dated.filter(x=>x.date>=startToday).length;
+  $('analyticsWeek').textContent=countSince(7*24*60*60*1000);
+  $('analyticsMonth').textContent=countSince(30*24*60*60*1000);
+  const subjectMap={};
+  scores.forEach(r=>{const name=String(r.subject||'Other');(subjectMap[name] ||= []).push(Number(r.pct)||0);});
+  const subjectRows=Object.entries(subjectMap).map(([name,vals])=>({name,count:vals.length,avg:Math.round(vals.reduce((a,b)=>a+b,0)/vals.length)})).sort((a,b)=>b.count-a.count);
+  const maxCount=Math.max(1,...subjectRows.map(x=>x.count));
+  $('analyticsSubjects').innerHTML=subjectRows.length?subjectRows.map(x=>`<div style="margin:9px 0"><div style="display:flex;justify-content:space-between;gap:8px"><b>${adminEscape(x.name)}</b><span>${x.count} quizzes</span></div><div style="height:9px;background:var(--line);border-radius:20px;overflow:hidden;margin-top:5px"><div style="height:100%;width:${Math.round(x.count/maxCount*100)}%;background:var(--green);border-radius:20px"></div></div></div>`).join(''):'<p>No quiz data yet.</p>';
+  $('analyticsAverages').innerHTML=subjectRows.length?subjectRows.map(x=>`<div class="result" style="display:flex;justify-content:space-between;gap:8px"><span>${adminEscape(x.name)}</span><b>${x.avg}%</b></div>`).join(''):'<p>No quiz data yet.</p>';
+  const dayRows=[];
+  for(let n=6;n>=0;n--){const d=new Date(startToday);d.setDate(d.getDate()-n);const next=new Date(d);next.setDate(next.getDate()+1);dayRows.push({label:d.toLocaleDateString(undefined,{weekday:'short'}),count:dated.filter(x=>x.date>=d&&x.date<next).length});}
+  const maxDay=Math.max(1,...dayRows.map(x=>x.count));
+  $('analyticsDaily').innerHTML=dayRows.map(x=>`<div style="display:grid;grid-template-columns:42px 1fr 28px;align-items:center;gap:8px;margin:8px 0"><small>${x.label}</small><div style="height:9px;background:var(--line);border-radius:20px;overflow:hidden"><div style="height:100%;width:${Math.round(x.count/maxDay*100)}%;background:var(--accent,#4f8cff)"></div></div><b>${x.count}</b></div>`).join('');
+
+  const average=scores.length?Math.round(scores.reduce((sum,r)=>sum+(Number(r.pct)||0),0)/scores.length):0;
+  $('adminStudentCount').textContent=usersSnap.size;
+  $('adminScoreCount').textContent=scores.length;
+  $('adminAverage').textContent=average+'%';
+  const byUid={};
+  scores.forEach(r=>{if(!r.uid)return;(byUid[r.uid] ||= []).push(r);});
+  adminStudentRows=usersSnap.docs.map(doc=>{
+   const u=doc.data(),studentScores=byUid[doc.id]||[];
+   const avg=studentScores.length?Math.round(studentScores.reduce((sum,r)=>sum+(Number(r.pct)||0),0)/studentScores.length):0;
+   const joined=u.createdAt&&u.createdAt.toDate?u.createdAt.toDate().toLocaleDateString():'Date unavailable';
+   return {name:String(u.displayName||'Student'),quizzes:studentScores.length,average:avg,joined};
+  }).sort((a,b)=>a.name.localeCompare(b.name));
+  adminReportData.students=adminStudentRows.map(r=>({...r}));
+  renderAdminStudents($('adminStudentSearch')?.value||'');
+  const exportStatus=$('adminExportStatus');if(exportStatus)exportStatus.textContent='Reports are ready. Choose a CSV download or print/save a PDF.';
+  const ranked=[...scores].sort((a,b)=>(Number(b.pct)||0)-(Number(a.pct)||0)).slice(0,10);
+  $('adminTopScores').innerHTML=ranked.length?ranked.map((r,i)=>`<div class="result">${i+1}. <b>${adminEscape(r.displayName||'Student')}</b> — ${Number(r.score)||0}/${Number(r.total)||0} (${Number(r.pct)||0}%) · ${adminEscape(r.subject||'Quiz')}</div>`).join(''):'<p>No quiz results yet.</p>';
+  const recent=[...scores].sort((a,b)=>{
+   const da=a.createdAt&&a.createdAt.toDate?a.createdAt.toDate().getTime():0;
+   const db=b.createdAt&&b.createdAt.toDate?b.createdAt.toDate().getTime():0;
+   return db-da;
+  }).slice(0,10);
+  $('adminRecentScores').innerHTML=recent.length?recent.map(r=>{
+   const d=r.createdAt&&r.createdAt.toDate?r.createdAt.toDate().toLocaleString():'Date unavailable';
+   return `<div class="result"><b>${adminEscape(r.displayName||'Student')}</b> · ${adminEscape(r.subject||'Quiz')} · ${Number(r.pct)||0}%<br><small>${adminEscape(d)}</small></div>`;
+  }).join(''):'<p>No recent activity yet.</p>';
+  content.classList.remove('hidden');
+ }catch(err){
+  console.error('Admin dashboard:',err);
+  status.textContent='Could not load dashboard data. Check Firestore rules and internet connection.';
+ }
+}
+function accountMessage(msg){const el=$('accountMessage');if(el)el.textContent=msg;}
+function friendlyAuthError(err){
+ const code=err&&err.code||'';
+ if(code.includes('email-already-in-use'))return 'That email already has an account. Please log in.';
+ if(code.includes('invalid-email'))return 'Please enter a valid email address.';
+ if(code.includes('weak-password'))return 'Choose a stronger password with at least 6 characters.';
+ if(code.includes('user-not-found')||code.includes('wrong-password')||code.includes('invalid-credential'))return 'Email or password was not recognized.';
+ if(code.includes('network'))return 'Check your internet connection and try again.';
+ return 'Could not complete that request. Check Firebase Authentication settings and try again.';
+}
+function referralCodeFromURL(){try{return new URLSearchParams(location.search).get('ref')||'';}catch(e){return '';}}
+function personalReferralLink(uid){const u=new URL(location.href);u.search='';u.hash='';u.searchParams.set('ref',uid);return u.toString();}
+function updateReferralPanel(user){
+ const field=$('referralLink'),status=$('referralStatus');
+ if(!field||!status)return;
+ if(user&&!user.isAnonymous){field.value=personalReferralLink(user.uid);status.textContent='Your personal invite link is ready. Share it with friends.';}
+ else{field.value='';field.placeholder='Sign in to generate your link';status.textContent='Sign in to create your personal invite link.';}
+}
+async function copyReferralLink(){
+ const value=$('referralLink')&&$('referralLink').value;
+ if(!value)return toast('Please sign in first.');
+ try{await navigator.clipboard.writeText(value);toast('Invite link copied!');}
+ catch(e){$('referralLink').focus();$('referralLink').select();toast('Select and copy your invite link.');}
+}
+async function shareReferralLink(){
+ const value=$('referralLink')&&$('referralLink').value;
+ if(!value)return toast('Please sign in first.');
+ const data={title:'Join Naija Smart Hub',text:'Join me on Naija Smart Hub to learn, practice quizzes and compete!',url:value};
+ if(navigator.share){try{await navigator.share(data);}catch(e){}}
+ else{await copyReferralLink();}
+}
+async function registerStudent(){
+ if(!nshAuth||!nshDb)return accountMessage('Account service is still connecting. Please wait and try again.');
+ const nickname=($('accountName').value||'').trim().replace(/[<>]/g,'').slice(0,20);
+ const email=($('accountEmail').value||'').trim();
+ const password=$('accountPassword').value||'';
+ if(nickname.length<2)return accountMessage('Choose a nickname with at least 2 characters.');
+ if(!email)return accountMessage('Enter an email address.');
+ if(password.length<6)return accountMessage('Password must be at least 6 characters.');
+ accountMessage('Creating your account…');
+ try{
+  const credential=await nshAuth.createUserWithEmailAndPassword(email,password);
+  const referralCode=referralCodeFromURL();
+  const profileData={displayName:nickname,createdAt:firebase.firestore.FieldValue.serverTimestamp()};
+  if(referralCode && referralCode!==credential.user.uid)profileData.referredBy=referralCode;
+  await nshDb.collection('users').doc(credential.user.uid).set(profileData);
+  localStorage.setItem(PLAYER_KEY,nickname);$('playerName').value=nickname;$('accountWelcome').textContent=nickname;
+  $('accountSignedOut').classList.add('hidden');$('accountSignedIn').classList.remove('hidden');updateReferralPanel(credential.user);
+  accountMessage('Account created successfully.');toast('Welcome to Naija Smart Hub!');
+ }catch(err){console.error('Registration:',err);accountMessage(friendlyAuthError(err));}
+}
+async function loginStudent(){
+ if(!nshAuth||!nshDb)return accountMessage('Account service is still connecting. Please wait and try again.');
+ const email=($('accountEmail').value||'').trim(),password=$('accountPassword').value||'';
+ if(!email||!password)return accountMessage('Enter your email address and password.');
+ accountMessage('Logging in…');
+ try{
+  const credential=await nshAuth.signInWithEmailAndPassword(email,password);
+  const doc=await nshDb.collection('users').doc(credential.user.uid).get();
+  const nickname=doc.exists&&doc.data().displayName?doc.data().displayName:'Student';
+  localStorage.setItem(PLAYER_KEY,nickname);$('playerName').value=nickname;$('accountWelcome').textContent=nickname;
+  $('accountSignedOut').classList.add('hidden');$('accountSignedIn').classList.remove('hidden');updateReferralPanel(credential.user);
+  accountMessage('You are logged in.');toast('Login successful!');
+ }catch(err){console.error('Login:',err);accountMessage(friendlyAuthError(err));}
+}
+async function logoutStudent(){
+ try{await nshAuth.signOut();await nshAuth.signInAnonymously();$('accountSignedIn').classList.add('hidden');$('accountSignedOut').classList.remove('hidden');updateReferralPanel(null);toast('You are now using guest mode.');}
+ catch(err){accountMessage('Could not log out. Please try again.');}
+}
+function startDailyChallenge(){const names=Object.keys(subjectBanks);const day=Math.floor(Date.now()/86400000);const subject=names[day%names.length];const questions=shuffleList(subjectBanks[subject]).slice(0,10);quizMode='daily';currentSubject=subject+' — Daily Challenge';activeQuestions=questions.map(q=>{const opts=shuffleList(q.slice(1,5).map((v,i)=>({v,correct:i===q[5]})));return {q:q[0],a:opts.map(x=>x.v),c:opts.findIndex(x=>x.correct)};});subjectIndex=0;subjectScore=0;subjectAnswered=false;$('subjectPicker').classList.add('hidden');$('subjectQuiz').classList.remove('hidden');$('quizSubjectName').textContent='⚡ Daily Challenge: '+subject;$('retryQuizBtn').classList.add('hidden');$('nextQuizBtn').classList.add('hidden');go('quizzes');renderSubjectQuestion();$('subjectQuiz').scrollIntoView({behavior:'smooth',block:'start'});}
+const savedPlayer=getPlayerName();if($('playerName')&&savedPlayer)$('playerName').value=savedPlayer;updateReferralPanel(nshAuth&&nshAuth.currentUser);initSharedLeaderboard();
+
+// Student learning dashboard: combines this device's quiz history with the signed-in student's private exam results.
+function nshDashSafe(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+async function nshLoadStudentDashboard(){
+ const notice=document.getElementById('studentDashNotice'),chart=document.getElementById('dashSubjectChart'),history=document.getElementById('dashExamHistory'),recs=document.getElementById('dashRecommendations');
+ if(!notice||!chart||!history||!recs)return;
+ let rows=[];try{rows=JSON.parse(localStorage.getItem('nsh_local_scores')||'[]');if(!Array.isArray(rows))rows=[];}catch(e){rows=[];}
+ let examRows=[];const user=window.nshAuth&&nshAuth.currentUser;
+ if(user&&!user.isAnonymous&&window.nshDb){
+  try{const snap=await nshDb.collection('examResults').where('uid','==',user.uid).limit(100).get();examRows=snap.docs.map(d=>{const x=d.data();return {subject:x.subject||'Examination',score:Number(x.score)||0,total:Number(x.total)||40,pct:Number(x.percent)||0,date:x.submittedAt&&x.submittedAt.toDate?x.submittedAt.toDate().toISOString():''};});notice.textContent='Showing saved quiz activity on this device and examination results linked to your account.';}
+  catch(e){console.warn('Dashboard exam history:',e);notice.textContent='Your device quiz history is shown. Cloud exam history could not load; check your connection and Firestore permissions.';}
+ }else{notice.textContent='You are using guest mode. Sign in to see examination records saved to your account across devices.';}
+ const combined=rows.concat(examRows),count=combined.length,avg=count?Math.round(combined.reduce((a,r)=>a+(Number(r.pct)||0),0)/count):0,best=count?Math.max(...combined.map(r=>Number(r.pct)||0)):0;
+ document.getElementById('dashAttempts').textContent=count;document.getElementById('dashAverage').textContent=count?avg+'%':'—';document.getElementById('dashBest').textContent=count?best+'%':'—';
+ const groups={};combined.forEach(r=>{const k=String(r.subject||'Other').replace(/ — Daily Challenge$/,'');(groups[k]||(groups[k]=[])).push(Number(r.pct)||0);});
+ const ranked=Object.entries(groups).map(([subject,vals])=>({subject,avg:Math.round(vals.reduce((a,b)=>a+b,0)/vals.length),attempts:vals.length})).sort((a,b)=>a.avg-b.avg);
+ chart.innerHTML=ranked.length?ranked.map(r=>`<div style="margin:12px 0"><div style="display:flex;justify-content:space-between;gap:8px;font-size:13px"><b>${nshDashSafe(r.subject)}</b><span>${r.avg}% · ${r.attempts} attempt${r.attempts===1?'':'s'}</span></div><div style="height:9px;background:var(--line);border-radius:20px;overflow:hidden;margin-top:6px"><div style="height:100%;width:${Math.max(0,Math.min(100,r.avg))}%;background:linear-gradient(90deg,#21c99a,#4c8dff);border-radius:20px"></div></div></div>`).join(''):'<p class="notice">No scores yet. Complete a quiz or practice exam to see your subject performance.</p>';
+ if(!count)recs.innerHTML='<p>Start with one short quiz. After you have a few results, this dashboard can highlight subjects to practise.</p>';
+ else if(ranked[0].avg<70)recs.innerHTML=`<p><b>Focus next:</b> ${nshDashSafe(ranked[0].subject)} (${ranked[0].avg}%). Review one topic, then try another short quiz. Aim to understand mistakes rather than rush.</p>`+(avg>=80?'<p>You are also maintaining a strong overall average. Keep practising steadily.</p>':'<p>Try a short practice session and review the explanations after each attempt.</p>');
+ else recs.innerHTML='<p>Great progress! Your recorded subject averages are at least 70%. Keep revisiting topics and practise at a comfortable pace.</p>';
+ const recent=examRows.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,8);
+ history.innerHTML=recent.length?recent.map(r=>`<article class="article"><b>${nshDashSafe(r.subject)}</b><p>${r.score}/${r.total} · ${r.pct}% · ${r.pct>=50?'Pass':'Keep practising'}</p></article>`).join(''):(user&&!user.isAnonymous?'<p>No saved examination results yet. Complete an online examination while signed in.</p>':'<p>Sign in to view private exam history, or complete quizzes to see device-based progress.</p>');
+}
+// Professional exam management: Firebase-backed schedules and result reporting.
+function nshExamAdminStatus(msg){const el=document.getElementById('examManagementStatus');if(el)el.textContent=msg;}
+function nshInitManagedExam(){const a=document.getElementById('managedExamSubject'),b=document.getElementById('examSubject');if(!a||a.options.length)return;if(b)Array.from(b.options).forEach(o=>a.add(new Option(o.textContent,o.value)));}
+async function nshIsExamAdmin(){if(!window.nshAuth||!nshAuth.currentUser||nshAuth.currentUser.isAnonymous||!window.nshDb)return false;const d=await nshDb.collection('admins').doc(nshAuth.currentUser.uid).get();return d.exists;}
+async function nshCreateManagedExam(){nshInitManagedExam();const status=document.getElementById('examManagementStatus');try{if(!await nshIsExamAdmin()){nshExamAdminStatus('Administrator access required. Sign in with the admin account.');return;}const title=document.getElementById('managedExamTitle').value.trim(),subject=document.getElementById('managedExamSubject').value,start=document.getElementById('managedExamStart').value,end=document.getElementById('managedExamEnd').value,pass=Number(document.getElementById('managedExamPass').value);if(title.length<3||!subject||!start||!end||new Date(end)<=new Date(start)||pass<1||pass>100){nshExamAdminStatus('Enter a title, subject, valid start/end times, and pass mark from 1–100.');return;}await nshDb.collection('examSchedules').add({title:title.slice(0,80),subject,startAt:firebase.firestore.Timestamp.fromDate(new Date(start)),endAt:firebase.firestore.Timestamp.fromDate(new Date(end)),passMark:pass,questionCount:40,durationMinutes:30,createdBy:nshAuth.currentUser.uid,createdAt:firebase.firestore.FieldValue.serverTimestamp(),active:true});document.getElementById('managedExamTitle').value='';nshExamAdminStatus('Exam schedule published.');await nshLoadManagedExams();}catch(e){console.error(e);nshExamAdminStatus('Could not publish. Check that the examSchedules Firestore rules are published.');}}
+async function nshLoadManagedExams(){const box=document.getElementById('managedExamList');if(!box)return;try{if(!await nshIsExamAdmin()){box.textContent='Administrator access required.';return;}const snap=await nshDb.collection('examSchedules').orderBy('startAt','desc').limit(50).get();box.innerHTML=snap.empty?'No scheduled exams yet.':snap.docs.map(d=>{const x=d.data(),dt=v=>v&&v.toDate?v.toDate().toLocaleString():'';return '<article class="article"><b>'+nshEscapeHtml(x.title||'Exam')+'</b><p>'+nshEscapeHtml(x.subject||'')+' · '+nshEscapeHtml(dt(x.startAt))+' to '+nshEscapeHtml(dt(x.endAt))+' · Pass mark '+Number(x.passMark||50)+'%</p></article>';}).join('');}catch(e){console.error(e);box.textContent='Could not load schedules. Check Firestore rules.';}}
+async function nshLoadManagedResults(){const box=document.getElementById('managedResultsList');if(!box)return;try{if(!await nshIsExamAdmin()){box.textContent='Administrator access required.';return;}const snap=await nshDb.collection('examResults').orderBy('submittedAt','desc').limit(200).get();window.nshManagedResultRows=snap.docs.map(d=>({id:d.id,...d.data()}));box.innerHTML=!snap.size?'No saved examination results yet.':window.nshManagedResultRows.map(r=>'<article class="article"><b>'+nshEscapeHtml(r.displayName||'Student')+'</b><p>'+nshEscapeHtml(r.subject||'')+' · '+Number(r.score||0)+'/'+Number(r.total||40)+' · '+Number(r.percent||0)+'% · '+(r.passed?'PASS':'NOT YET PASSED')+'</p></article>').join('');}catch(e){console.error(e);box.textContent='Could not load results. Check examResults Firestore rules.';}}
+function nshEscapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function nshExportManagedResults(){const rows=window.nshManagedResultRows||[];if(!rows.length){nshExamAdminStatus('Load results first.');return;}const cols=['displayName','subject','score','total','percent','passed'];const csv=[cols.join(','),...rows.map(r=>cols.map(k=>'"'+String(r[k]??'').replace(/"/g,'""')+'"').join(','))].join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='naija-smart-hub-exam-results.csv';a.click();URL.revokeObjectURL(a.href);}
+// Save an exam result privately to the signed-in student's own result record.
+const nshOriginalSubmitExam=window.nshSubmitExam;
+window.nshSubmitExam=function(auto){const before=window.nshExamQuestions?.length||0;const answers=window.nshExamAnswers?window.nshExamAnswers.slice():[];const subject=window.nshExamSubject||'';if(typeof nshOriginalSubmitExam==='function')nshOriginalSubmitExam(auto);try{const qs=window.nshExamQuestions||[];const score=qs.reduce((n,q,i)=>n+(answers[i]===q.c?1:0),0),total=qs.length;if(total&&window.nshDb&&window.nshAuth&&nshAuth.currentUser&&!nshAuth.currentUser.isAnonymous){nshDb.collection('examResults').add({uid:nshAuth.currentUser.uid,displayName:(document.getElementById('profileName')?.value||'Student').slice(0,40),subject,score,total,percent:Math.round(score/total*100),passed:Math.round(score/total*100)>=50,submittedAt:firebase.firestore.FieldValue.serverTimestamp(),autoSubmitted:!!auto}).catch(e=>console.warn('Exam result save failed:',e));}}catch(e){console.warn('Result save error:',e);}};
+document.addEventListener('DOMContentLoaded',()=>{nshInitManagedExam();});
+</script>
+</body>
+</html>
